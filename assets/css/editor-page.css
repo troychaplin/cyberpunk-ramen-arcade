@@ -1,0 +1,44 @@
+/**
+ * Page Editor Styles
+ *
+ * Applied only when editing pages for a full-width editing experience.
+ */
+
+.editor-styles-wrapper {
+  padding: 0 !important;
+}
+
+.is-root-container {
+  padding: 0 !important;
+  max-width: none !important;
+}
+
+/* Remove title wrapper space - content starts at top */
+.editor-visual-editor__post-title-wrapper {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+/* Remove gap between top-level sections only */
+.is-root-container > .wp-block-group,
+.is-root-container > .wp-block-cover,
+.is-root-container > section,
+.is-root-container > .alignfull {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+/* Hide decorative/animation elements in editor */
+/* The LLM adds this class to empty divs used for CSS animations/backgrounds */
+/* WordPress wraps blocks in extra divs, so we need :has() to hide the parent wrapper too */
+.editor-styles-wrapper .miles-editor-hidden,
+.editor-styles-wrapper :has(> .miles-editor-hidden) {
+  display: none !important;
+}
+
+/* Reduce extra space WordPress adds after content for block insertion */
+/* WordPress adds a ::after pseudo-element on body for click area - minimize it */
+.editor-styles-wrapper::after {
+  height: 100px !important;
+  min-height: 100px !important;
+}
