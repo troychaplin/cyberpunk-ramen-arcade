@@ -2525,9 +2525,37 @@ header:has(.wp-block-navigation .is-menu-open) {
    ======================================== */
 /* ============================================
        SINGLE POST TEMPLATE — Cyberpunk Ramen Counter
-       ============================================ */
-
-    /* Design Tokens (scoped) */
+           ============================================ */
+    
+        /* Header Overlay — position header on top of hero */
+        .wp-site-blocks:has(.post-header-zone) > header {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          z-index: 100;
+        }
+    
+        .wp-site-blocks:has(.post-header-zone) > .post-header-zone {
+          margin-top: 0;
+        }
+    
+        /* Editor: header overlay in single post template */
+        .editor-styles-wrapper:has(.post-header-zone) .is-root-container > [data-type="core/template-part"]:first-child {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          z-index: 100;
+          pointer-events: auto;
+        }
+    
+        /* Ensure hero-nav works correctly in overlay mode */
+        .wp-site-blocks:has(.post-header-zone) > header .hero-nav {
+          position: relative;
+        }
+    
+        /* Design Tokens (scoped) */
     .post-header-zone,
     .reading-zone,
     .post-footer-zone {
@@ -2571,21 +2599,21 @@ header:has(.wp-block-navigation .is-menu-open) {
     /* ============================================
        1. POST HEADER ZONE
        ============================================ */
-    .post-header-zone {
-          background-color: var(--color-bg-deep);
-          background-image: url('/wp-content/uploads/2026/02/post-hero-atmosphere.jpg');
-          background-size: cover;
-          background-position: center 30%;
-          padding: clamp(120px, 18vh, 200px) var(--space-md) clamp(80px, 12vh, 140px);
-          position: relative;
-          overflow: hidden;
-          font-family: var(--font-mono);
-          color: var(--color-text-warm);
-          min-height: 70vh;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-        }
+.post-header-zone {
+              background-color: var(--color-bg-deep);
+              background-image: url('/wp-content/uploads/2026/02/post-hero-atmosphere.jpg');
+              background-size: cover;
+              background-position: center 30%;
+              padding: clamp(120px, 18vh, 200px) var(--space-md) clamp(80px, 12vh, 140px);
+              position: relative;
+              overflow: hidden;
+              font-family: var(--font-mono);
+              color: var(--color-text-warm);
+              min-height: 70vh;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
     .post-header-zone::before {
           content: '';
           position: absolute;
@@ -2845,8 +2873,8 @@ header:has(.wp-block-navigation .is-menu-open) {
     /* ============================================
        2. CONTENT READING ZONE
        ============================================ */
-    .reading-zone {
-      background-color: var(--color-bg-mid);
+.reading-zone {
+          background-color: var(--color-bg-deep);
       position: relative;
       overflow: hidden;
       font-family: var(--font-mono);
@@ -3655,15 +3683,14 @@ header:has(.wp-block-navigation .is-menu-open) {
 }
 
 /* :::SECTION:Section Spacing::: */
-
 /* Post Header Zone spacing */
-:root :where(.post-header-zone) {
-  padding: 80px var(--space-md) 60px;
-}
-
-.editor-styles-wrapper .post-header-zone {
-  padding: 80px var(--space-md) 60px !important;
-}
+    :root :where(.post-header-zone) {
+      padding: 80px var(--space-md) 60px;
+    }
+    
+    .editor-styles-wrapper .post-header-zone {
+      padding: 80px var(--space-md) 60px !important;
+    }
 
 /* Reading Zone spacing */
 :root :where(.reading-zone__inner) {
