@@ -1,868 +1,868 @@
 {
-  "$schema": "https://schemas.wp.org/trunk/theme.json",
-  "version": 3,
-  "settings": {
-    "appearanceTools": true,
-    "useRootPaddingAwareAlignments": true,
-    "layout": {
-      "contentSize": "1200px",
-      "wideSize": "1400px"
-    },
-    "color": {
-      "defaultDuotone": false,
-      "defaultGradients": false,
-      "defaultPalette": false,
-      "palette": [
-        {
-          "slug": "bg-deep",
-          "name": "Bg Deep",
-          "color": "#08081a"
-        },
-        {
-          "slug": "bg-mid",
-          "name": "Bg Mid",
-          "color": "#0e0e28"
-        },
-        {
-          "slug": "bg-card",
-          "name": "Bg Card",
-          "color": "#12122e"
-        },
-        {
-          "slug": "bg-card-hover",
-          "name": "Bg Card Hover",
-          "color": "#181844"
-        },
-        {
-          "slug": "neon-pink",
-          "name": "Neon Pink",
-          "color": "#ff2d7b"
-        },
-        {
-          "slug": "neon-pink-dim",
-          "name": "Neon Pink Dim",
-          "color": "rgba(255, 45, 123, 0.15)"
-        },
-        {
-          "slug": "neon-cyan",
-          "name": "Neon Cyan",
-          "color": "#00e5ff"
-        },
-        {
-          "slug": "neon-cyan-dim",
-          "name": "Neon Cyan Dim",
-          "color": "rgba(0, 229, 255, 0.12)"
-        },
-        {
-          "slug": "neon-green",
-          "name": "Neon Green",
-          "color": "#39ff14"
-        },
-        {
-          "slug": "neon-green-dim",
-          "name": "Neon Green Dim",
-          "color": "rgba(57, 255, 20, 0.12)"
-        },
-        {
-          "slug": "text-warm",
-          "name": "Text Warm",
-          "color": "#f0e6d6"
-        },
-        {
-          "slug": "text-dim",
-          "name": "Text Dim",
-          "color": "#7a7592"
-        },
-        {
-          "slug": "text-mid",
-          "name": "Text Mid",
-          "color": "#b0a8c4"
-        },
-        {
-          "slug": "border-subtle",
-          "name": "Border Subtle",
-          "color": "rgba(122, 117, 146, 0.18)"
-        },
-        {
-          "slug": "border-active",
-          "name": "Border Active",
-          "color": "rgba(0, 229, 255, 0.4)"
-        }
-      ],
-      "duotone": [
-        {
-          "slug": "primary-contrast",
-          "name": "Primary Contrast",
-          "colors": [
-            "#08081a",
-            "#f0e6d6"
-          ]
-        },
-        {
-          "slug": "accent-dark",
-          "name": "Accent Dark",
-          "colors": [
-            "#08081a",
-            "rgba(122, 117, 146, 0.18)"
-          ]
-        },
-        {
-          "slug": "accent-light",
-          "name": "Accent Light",
-          "colors": [
-            "rgba(122, 117, 146, 0.18)",
-            "#f0e6d6"
-          ]
-        }
-      ],
-      "gradients": [
-        {
-          "slug": "extracted-linear-1",
-          "name": "Linear Gradient 1",
-          "gradient": "linear-gradient(180deg,\n      rgba(8,8,26,0.85) 0%,\n      rgba(8,8,26,0.6) 30%,\n      rgba(8,8,26,0.55) 50%,\n      rgba(8,8,26,0.7) 75%,\n      rgba(8,8,26,0.95) 100%\n    )"
-        },
-        {
-          "slug": "extracted-linear-2",
-          "name": "Linear Gradient 2",
-          "gradient": "linear-gradient(\n    0deg,\n    transparent,\n    transparent 2px,\n    rgba(0,0,0,0.08) 2px,\n    rgba(0,0,0,0.08) 4px\n  )"
-        },
-        {
-          "slug": "extracted-radial-3",
-          "name": "Radial Gradient 3",
-          "gradient": "radial-gradient(circle, rgba(255,45,123,0.08) 0%, transparent 70%)"
-        },
-        {
-          "slug": "extracted-radial-4",
-          "name": "Radial Gradient 4",
-          "gradient": "radial-gradient(circle, rgba(0,229,255,0.06) 0%, transparent 70%)"
-        },
-        {
-          "slug": "extracted-radial-5",
-          "name": "Radial Gradient 5",
-          "gradient": "radial-gradient(circle, rgba(255, 45, 123, 0.05) 0%, transparent 70%)"
-        },
-        {
-          "slug": "extracted-radial-6",
-          "name": "Radial Gradient 6",
-          "gradient": "radial-gradient(circle, rgba(0, 229, 255, 0.04) 0%, transparent 70%)"
-        },
-        {
-          "slug": "extracted-radial-7",
-          "name": "Radial Gradient 7",
-          "gradient": "radial-gradient(circle, rgba(57, 255, 20, 0.04) 0%, transparent 70%)"
-        },
-        {
-          "slug": "extracted-radial-8",
-          "name": "Radial Gradient 8",
-          "gradient": "radial-gradient(circle, rgba(0, 229, 255, 0.05) 0%, transparent 70%)"
-        },
-        {
-          "slug": "extracted-linear-9",
-          "name": "Linear Gradient 9",
-          "gradient": "linear-gradient(180deg, rgba(8, 8, 26, 0.3) 0%, rgba(8, 8, 26, 0.92) 100%)"
-        },
-        {
-          "slug": "extracted-linear-10",
-          "name": "Linear Gradient 10",
-          "gradient": "linear-gradient(180deg, rgba(8, 8, 26, 0.2) 0%, rgba(8, 8, 26, 0.88) 100%)"
-        },
-        {
-          "slug": "extracted-linear-11",
-          "name": "Linear Gradient 11",
-          "gradient": "linear-gradient(180deg,\n    rgba(8, 8, 26, 0.2) 0%,\n    rgba(8, 8, 26, 0.6) 40%,\n    rgba(8, 8, 26, 0.95) 100%\n  )"
-        },
-        {
-          "slug": "extracted-linear-12",
-          "name": "Linear Gradient 12",
-          "gradient": "linear-gradient(180deg,\n    rgba(8, 8, 26, 0.1) 0%,\n    rgba(8, 8, 26, 0.5) 40%,\n    rgba(8, 8, 26, 0.9) 100%\n  )"
-        },
-        {
-          "slug": "extracted-linear-13",
-          "name": "Linear Gradient 13",
-          "gradient": "linear-gradient(\n    0deg,\n    transparent,\n    transparent 2px,\n    rgba(0,0,0,0.06) 2px,\n    rgba(0,0,0,0.06) 4px\n  )"
-        },
-        {
-          "slug": "extracted-radial-14",
-          "name": "Radial Gradient 14",
-          "gradient": "radial-gradient(ellipse at 30% 50%, rgba(255, 45, 123, 0.06) 0%, transparent 50%)"
-        },
-        {
-          "slug": "extracted-radial-15",
-          "name": "Radial Gradient 15",
-          "gradient": "radial-gradient(ellipse at 70% 50%, rgba(0, 229, 255, 0.05) 0%, transparent 50%)"
-        }
-      ]
-    },
-    "typography": {
-      "defaultFontSizes": false,
-      "fluid": true,
-      "fontFamilies": [
-        {
-          "fontFamily": "\"Chakra Petch\", sans-serif",
-          "name": "Chakra Petch",
-          "slug": "chakra-petch",
-          "fontFace": [
-            {
-              "fontFamily": "Chakra Petch",
-              "fontStyle": "normal",
-              "fontWeight": "400",
-              "src": [
-                "file:./assets/fonts/chakra-petch/400-thai.woff2"
-              ],
-              "unicodeRange": "U+02D7, U+0303, U+0331, U+0E01-0E5B, U+200C-200D, U+25CC"
-            },
-            {
-              "fontFamily": "Chakra Petch",
-              "fontStyle": "normal",
-              "fontWeight": "400",
-              "src": [
-                "file:./assets/fonts/chakra-petch/400-vietnamese.woff2"
-              ],
-              "unicodeRange": "U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB"
-            },
-            {
-              "fontFamily": "Chakra Petch",
-              "fontStyle": "normal",
-              "fontWeight": "400",
-              "src": [
-                "file:./assets/fonts/chakra-petch/400-latin-ext.woff2"
-              ],
-              "unicodeRange": "U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF"
-            },
-            {
-              "fontFamily": "Chakra Petch",
-              "fontStyle": "normal",
-              "fontWeight": "400",
-              "src": [
-                "file:./assets/fonts/chakra-petch/400-latin.woff2"
-              ],
-              "unicodeRange": "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD"
-            },
-            {
-              "fontFamily": "Chakra Petch",
-              "fontStyle": "normal",
-              "fontWeight": "600",
-              "src": [
-                "file:./assets/fonts/chakra-petch/600-thai.woff2"
-              ],
-              "unicodeRange": "U+02D7, U+0303, U+0331, U+0E01-0E5B, U+200C-200D, U+25CC"
-            },
-            {
-              "fontFamily": "Chakra Petch",
-              "fontStyle": "normal",
-              "fontWeight": "600",
-              "src": [
-                "file:./assets/fonts/chakra-petch/600-vietnamese.woff2"
-              ],
-              "unicodeRange": "U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB"
-            },
-            {
-              "fontFamily": "Chakra Petch",
-              "fontStyle": "normal",
-              "fontWeight": "600",
-              "src": [
-                "file:./assets/fonts/chakra-petch/600-latin-ext.woff2"
-              ],
-              "unicodeRange": "U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF"
-            },
-            {
-              "fontFamily": "Chakra Petch",
-              "fontStyle": "normal",
-              "fontWeight": "600",
-              "src": [
-                "file:./assets/fonts/chakra-petch/600-latin.woff2"
-              ],
-              "unicodeRange": "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD"
-            },
-            {
-              "fontFamily": "Chakra Petch",
-              "fontStyle": "normal",
-              "fontWeight": "700",
-              "src": [
-                "file:./assets/fonts/chakra-petch/700-thai.woff2"
-              ],
-              "unicodeRange": "U+02D7, U+0303, U+0331, U+0E01-0E5B, U+200C-200D, U+25CC"
-            },
-            {
-              "fontFamily": "Chakra Petch",
-              "fontStyle": "normal",
-              "fontWeight": "700",
-              "src": [
-                "file:./assets/fonts/chakra-petch/700-vietnamese.woff2"
-              ],
-              "unicodeRange": "U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB"
-            },
-            {
-              "fontFamily": "Chakra Petch",
-              "fontStyle": "normal",
-              "fontWeight": "700",
-              "src": [
-                "file:./assets/fonts/chakra-petch/700-latin-ext.woff2"
-              ],
-              "unicodeRange": "U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF"
-            },
-            {
-              "fontFamily": "Chakra Petch",
-              "fontStyle": "normal",
-              "fontWeight": "700",
-              "src": [
-                "file:./assets/fonts/chakra-petch/700-latin.woff2"
-              ],
-              "unicodeRange": "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD"
-            }
-          ]
-        },
-        {
-          "fontFamily": "\"IBM Plex Mono\", sans-serif",
-          "name": "IBM Plex Mono",
-          "slug": "ibm-plex-mono",
-          "fontFace": [
-            {
-              "fontFamily": "IBM Plex Mono",
-              "fontStyle": "italic",
-              "fontWeight": "400",
-              "src": [
-                "file:./assets/fonts/ibm-plex-mono/400-italic-cyrillic-ext.woff2"
-              ],
-              "unicodeRange": "U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F"
-            },
-            {
-              "fontFamily": "IBM Plex Mono",
-              "fontStyle": "italic",
-              "fontWeight": "400",
-              "src": [
-                "file:./assets/fonts/ibm-plex-mono/400-italic-cyrillic.woff2"
-              ],
-              "unicodeRange": "U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116"
-            },
-            {
-              "fontFamily": "IBM Plex Mono",
-              "fontStyle": "italic",
-              "fontWeight": "400",
-              "src": [
-                "file:./assets/fonts/ibm-plex-mono/400-italic-vietnamese.woff2"
-              ],
-              "unicodeRange": "U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB"
-            },
-            {
-              "fontFamily": "IBM Plex Mono",
-              "fontStyle": "italic",
-              "fontWeight": "400",
-              "src": [
-                "file:./assets/fonts/ibm-plex-mono/400-italic-latin-ext.woff2"
-              ],
-              "unicodeRange": "U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF"
-            },
-            {
-              "fontFamily": "IBM Plex Mono",
-              "fontStyle": "italic",
-              "fontWeight": "400",
-              "src": [
-                "file:./assets/fonts/ibm-plex-mono/400-italic-latin.woff2"
-              ],
-              "unicodeRange": "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD"
-            },
-            {
-              "fontFamily": "IBM Plex Mono",
-              "fontStyle": "normal",
-              "fontWeight": "400",
-              "src": [
-                "file:./assets/fonts/ibm-plex-mono/400-cyrillic-ext.woff2"
-              ],
-              "unicodeRange": "U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F"
-            },
-            {
-              "fontFamily": "IBM Plex Mono",
-              "fontStyle": "normal",
-              "fontWeight": "400",
-              "src": [
-                "file:./assets/fonts/ibm-plex-mono/400-cyrillic.woff2"
-              ],
-              "unicodeRange": "U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116"
-            },
-            {
-              "fontFamily": "IBM Plex Mono",
-              "fontStyle": "normal",
-              "fontWeight": "400",
-              "src": [
-                "file:./assets/fonts/ibm-plex-mono/400-vietnamese.woff2"
-              ],
-              "unicodeRange": "U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB"
-            },
-            {
-              "fontFamily": "IBM Plex Mono",
-              "fontStyle": "normal",
-              "fontWeight": "400",
-              "src": [
-                "file:./assets/fonts/ibm-plex-mono/400-latin-ext.woff2"
-              ],
-              "unicodeRange": "U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF"
-            },
-            {
-              "fontFamily": "IBM Plex Mono",
-              "fontStyle": "normal",
-              "fontWeight": "400",
-              "src": [
-                "file:./assets/fonts/ibm-plex-mono/400-latin.woff2"
-              ],
-              "unicodeRange": "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD"
-            },
-            {
-              "fontFamily": "IBM Plex Mono",
-              "fontStyle": "normal",
-              "fontWeight": "500",
-              "src": [
-                "file:./assets/fonts/ibm-plex-mono/500-cyrillic-ext.woff2"
-              ],
-              "unicodeRange": "U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F"
-            },
-            {
-              "fontFamily": "IBM Plex Mono",
-              "fontStyle": "normal",
-              "fontWeight": "500",
-              "src": [
-                "file:./assets/fonts/ibm-plex-mono/500-cyrillic.woff2"
-              ],
-              "unicodeRange": "U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116"
-            },
-            {
-              "fontFamily": "IBM Plex Mono",
-              "fontStyle": "normal",
-              "fontWeight": "500",
-              "src": [
-                "file:./assets/fonts/ibm-plex-mono/500-vietnamese.woff2"
-              ],
-              "unicodeRange": "U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB"
-            },
-            {
-              "fontFamily": "IBM Plex Mono",
-              "fontStyle": "normal",
-              "fontWeight": "500",
-              "src": [
-                "file:./assets/fonts/ibm-plex-mono/500-latin-ext.woff2"
-              ],
-              "unicodeRange": "U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF"
-            },
-            {
-              "fontFamily": "IBM Plex Mono",
-              "fontStyle": "normal",
-              "fontWeight": "500",
-              "src": [
-                "file:./assets/fonts/ibm-plex-mono/500-latin.woff2"
-              ],
-              "unicodeRange": "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD"
-            },
-            {
-              "fontFamily": "IBM Plex Mono",
-              "fontStyle": "normal",
-              "fontWeight": "600",
-              "src": [
-                "file:./assets/fonts/ibm-plex-mono/600-cyrillic-ext.woff2"
-              ],
-              "unicodeRange": "U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F"
-            },
-            {
-              "fontFamily": "IBM Plex Mono",
-              "fontStyle": "normal",
-              "fontWeight": "600",
-              "src": [
-                "file:./assets/fonts/ibm-plex-mono/600-cyrillic.woff2"
-              ],
-              "unicodeRange": "U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116"
-            },
-            {
-              "fontFamily": "IBM Plex Mono",
-              "fontStyle": "normal",
-              "fontWeight": "600",
-              "src": [
-                "file:./assets/fonts/ibm-plex-mono/600-vietnamese.woff2"
-              ],
-              "unicodeRange": "U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB"
-            },
-            {
-              "fontFamily": "IBM Plex Mono",
-              "fontStyle": "normal",
-              "fontWeight": "600",
-              "src": [
-                "file:./assets/fonts/ibm-plex-mono/600-latin-ext.woff2"
-              ],
-              "unicodeRange": "U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF"
-            },
-            {
-              "fontFamily": "IBM Plex Mono",
-              "fontStyle": "normal",
-              "fontWeight": "600",
-              "src": [
-                "file:./assets/fonts/ibm-plex-mono/600-latin.woff2"
-              ],
-              "unicodeRange": "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD"
-            }
-          ]
-        }
-      ],
-      "fontSizes": [
-        {
-          "slug": "small",
-          "name": "Small",
-          "size": "0.8rem"
-        },
-        {
-          "slug": "medium",
-          "name": "Medium",
-          "size": "1rem"
-        },
-        {
-          "slug": "large",
-          "name": "Large",
-          "size": "1.125rem"
-        },
-        {
-          "slug": "x-large",
-          "name": "Extra Large",
-          "size": "1.25rem"
-        },
-        {
-          "slug": "xx-large",
-          "name": "2X Large",
-          "size": "1.5rem"
-        },
-        {
-          "slug": "huge",
-          "name": "Huge",
-          "size": "2rem",
-          "fluid": {
-            "min": "1.5rem",
-            "max": "2rem"
-          }
-        },
-        {
-          "slug": "huge-2",
-          "name": "Huge 2",
-          "size": "3rem",
-          "fluid": {
-            "min": "2rem",
-            "max": "3rem"
-          }
-        },
-        {
-          "slug": "gigantic",
-          "name": "Gigantic",
-          "size": "9rem",
-          "fluid": {
-            "min": "3.2rem",
-            "max": "9rem"
-          }
-        }
-      ]
-    },
-    "spacing": {
-      "blockGap": null,
-      "defaultSpacingSizes": false,
-      "spacingSizes": [
-        {
-          "slug": "20",
-          "name": "X-Small",
-          "size": "0.5rem"
-        },
-        {
-          "slug": "30",
-          "name": "Small",
-          "size": "1rem"
-        },
-        {
-          "slug": "40",
-          "name": "Medium",
-          "size": "2rem"
-        },
-        {
-          "slug": "50",
-          "name": "Large",
-          "size": "4rem"
-        },
-        {
-          "slug": "60",
-          "name": "X-Large",
-          "size": "6rem"
-        },
-        {
-          "slug": "65",
-          "name": "Spacing 65",
-          "size": "8rem"
-        }
-      ],
-      "units": [
-        "px",
-        "em",
-        "rem",
-        "%",
-        "vh",
-        "vw"
-      ]
-    },
-    "shadow": {
-      "defaultPresets": false,
-      "presets": [
-        {
-          "slug": "extracted-1",
-          "name": "Shadow 1",
-          "shadow": "0 0 6px rgba(255, 45, 123, 0.5)"
-        },
-        {
-          "slug": "extracted-2",
-          "name": "Shadow 2",
-          "shadow": "0 0 6px rgba(57,255,20,0.6)"
-        },
-        {
-          "slug": "extracted-inner-3",
-          "name": "Inner Shadow 3",
-          "shadow": "0 0 12px rgba(0,229,255,0.15), inset 0 0 12px rgba(0,229,255,0.05)"
-        },
-        {
-          "slug": "extracted-layered-4",
-          "name": "Layered Shadow 4",
-          "shadow": "0 0 12px rgba(255,45,123,0.4),\n    0 0 30px rgba(255,45,123,0.15)"
-        },
-        {
-          "slug": "extracted-layered-5",
-          "name": "Layered Shadow 5",
-          "shadow": "0 0 16px rgba(255,45,123,0.6),\n    0 0 50px rgba(255,45,123,0.25)"
-        },
-        {
-          "slug": "extracted-inner-6",
-          "name": "Inner Shadow 6",
-          "shadow": "0 0 40px rgba(255, 45, 123, 0.1), inset 0 0 40px rgba(255, 45, 123, 0.03)"
-        },
-        {
-          "slug": "extracted-layered-7",
-          "name": "Layered Shadow 7",
-          "shadow": "0 8px 32px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 229, 255, 0.05)"
-        },
-        {
-          "slug": "extracted-inner-8",
-          "name": "Inner Shadow 8",
-          "shadow": "0 0 20px rgba(0, 229, 255, 0.15), inset 0 0 20px rgba(0, 229, 255, 0.05)"
-        },
-        {
-          "slug": "extracted-9",
-          "name": "Shadow 9",
-          "shadow": "0 0 40px rgba(255, 45, 123, 0.08)"
-        },
-        {
-          "slug": "extracted-inner-10",
-          "name": "Inner Shadow 10",
-          "shadow": "0 0 12px rgba(0, 229, 255, 0.12), inset 0 0 12px rgba(0, 229, 255, 0.04)"
-        },
-        {
-          "slug": "extracted-11",
-          "name": "Shadow 11",
-          "shadow": "0 0 6px rgba(0, 229, 255, 0.5)"
-        },
-        {
-          "slug": "extracted-12",
-          "name": "Shadow 12",
-          "shadow": "0 0 12px rgba(0, 229, 255, 0.15)"
-        },
-        {
-          "slug": "extracted-13",
-          "name": "Shadow 13",
-          "shadow": "0 0 14px rgba(255, 45, 123, 0.4)"
-        }
-      ]
-    },
-    "custom": {
-      "lineHeight": {
-        "none": "1",
-        "tight": "1.1",
-        "snug": "1.25",
-        "normal": "1.5",
-        "relaxed": "1.625",
-        "loose": "2"
-      },
-      "fontWeight": {
-        "thin": "100",
-        "extralight": "200",
-        "light": "300",
-        "normal": "400",
-        "medium": "500",
-        "semibold": "600",
-        "bold": "700",
-        "extrabold": "800",
-        "black": "900"
-      }
-    }
-  },
-  "styles": {
-    "css": ".post-type-page .editor-post-title { display: none !important; }\n.post-type-post.editor-styles-wrapper { padding: 2rem; }\n.post-type-post .editor-post-title__input { font-size: 2.5rem; }",
-    "spacing": {
-      "blockGap": "0",
-      "padding": {
-        "top": "0",
-        "right": "0",
-        "bottom": "0",
-        "left": "0"
-      }
-    },
-    "elements": {
-      "button": {
-        "border": {
-          "radius": "0",
-          "width": "0",
-          "style": "none"
-        },
-        "typography": {
-          "fontSize": "inherit",
-          "fontFamily": "inherit",
-          "lineHeight": "inherit"
-        },
-        ":hover": {
-          "color": {
-            "background": "inherit",
-            "text": "inherit"
-          }
-        },
-        ":focus": {
-          "outline": {
-            "width": "2px",
-            "style": "solid",
-            "offset": "2px"
-          }
-        }
-      },
-      "link": {
-        "color": {
-          "text": "inherit"
-        },
-        ":hover": {
-          "color": {
-            "text": "inherit"
-          },
-          "typography": {
-            "textDecoration": "underline"
-          }
-        },
-        ":focus": {
-          "outline": {
-            "width": "2px",
-            "style": "solid",
-            "offset": "2px"
-          }
-        }
-      },
-      "heading": {
-        "typography": {
-          "fontFamily": "inherit",
-          "fontWeight": "inherit",
-          "lineHeight": "inherit"
-        },
-        "color": {
-          "text": "inherit"
-        }
-      }
-    },
-    "blocks": {
-      "core/list": {
-        "spacing": {
-          "padding": {
-            "left": "0"
-          },
-          "margin": {
-            "top": "0",
-            "bottom": "0"
-          }
-        },
-        "typography": {
-          "fontSize": "inherit",
-          "lineHeight": "inherit"
-        }
-      },
-      "core/separator": {
-        "border": {
-          "width": "0",
-          "style": "none"
-        },
-        "spacing": {
-          "margin": {
-            "top": "0",
-            "bottom": "0"
-          }
-        }
-      },
-      "core/code": {
-        "spacing": {
-          "padding": {
-            "top": "0",
-            "right": "0",
-            "bottom": "0",
-            "left": "0"
-          },
-          "margin": {
-            "top": "0",
-            "bottom": "0"
-          }
-        },
-        "typography": {
-          "fontSize": "inherit",
-          "fontFamily": "inherit"
-        },
-        "color": {
-          "background": "transparent"
-        }
-      },
-      "core/table": {
-        "spacing": {
-          "margin": {
-            "top": "0",
-            "bottom": "0"
-          }
-        }
-      },
-      "core/details": {
-        "spacing": {
-          "margin": {
-            "top": "0",
-            "bottom": "0"
-          }
-        }
-      },
-      "core/navigation": {
-        "typography": {
-          "fontSize": "inherit",
-          "fontFamily": "inherit",
-          "lineHeight": "inherit"
-        }
-      },
-      "core/navigation-link": {
-        "typography": {
-          "fontSize": "inherit",
-          "fontFamily": "inherit"
-        }
-      },
-      "core/quote": {
-        "border": {
-          "left": {
-            "width": "4px",
-            "style": "solid",
-            "color": "var(--wp--preset--color--bg-deep)"
-          }
-        },
-        "spacing": {
-          "padding": {
-            "left": "var(--wp--preset--spacing--40, 1.5rem)"
-          }
-        }
-      }
-    }
-  },
-  "templateParts": [
-    {
-      "name": "header",
-      "title": "Header",
-      "area": "header"
-    },
-    {
-      "name": "footer",
-      "title": "Footer",
-      "area": "footer"
-    }
-  ]
+	"$schema": "https://schemas.wp.org/wp/6.9/theme.json",
+	"version": 3,
+	"settings": {
+		"appearanceTools": true,
+		"color": {
+			"defaultDuotone": false,
+			"defaultGradients": false,
+			"defaultPalette": false,
+			"duotone": [
+				{
+					"colors": [
+						"#08081a",
+						"#f0e6d6"
+					],
+					"name": "Primary Contrast",
+					"slug": "primary-contrast"
+				},
+				{
+					"colors": [
+						"#08081a",
+						"rgba(122, 117, 146, 0.18)"
+					],
+					"name": "Accent Dark",
+					"slug": "accent-dark"
+				},
+				{
+					"colors": [
+						"rgba(122, 117, 146, 0.18)",
+						"#f0e6d6"
+					],
+					"name": "Accent Light",
+					"slug": "accent-light"
+				}
+			],
+			"gradients": [
+				{
+					"gradient": "linear-gradient(180deg,\n      rgba(8,8,26,0.85) 0%,\n      rgba(8,8,26,0.6) 30%,\n      rgba(8,8,26,0.55) 50%,\n      rgba(8,8,26,0.7) 75%,\n      rgba(8,8,26,0.95) 100%\n    )",
+					"name": "Linear Gradient 1",
+					"slug": "extracted-linear-1"
+				},
+				{
+					"gradient": "linear-gradient(\n    0deg,\n    transparent,\n    transparent 2px,\n    rgba(0,0,0,0.08) 2px,\n    rgba(0,0,0,0.08) 4px\n  )",
+					"name": "Linear Gradient 2",
+					"slug": "extracted-linear-2"
+				},
+				{
+					"gradient": "radial-gradient(circle, rgba(255,45,123,0.08) 0%, transparent 70%)",
+					"name": "Radial Gradient 3",
+					"slug": "extracted-radial-3"
+				},
+				{
+					"gradient": "radial-gradient(circle, rgba(0,229,255,0.06) 0%, transparent 70%)",
+					"name": "Radial Gradient 4",
+					"slug": "extracted-radial-4"
+				},
+				{
+					"gradient": "radial-gradient(circle, rgba(255, 45, 123, 0.05) 0%, transparent 70%)",
+					"name": "Radial Gradient 5",
+					"slug": "extracted-radial-5"
+				},
+				{
+					"gradient": "radial-gradient(circle, rgba(0, 229, 255, 0.04) 0%, transparent 70%)",
+					"name": "Radial Gradient 6",
+					"slug": "extracted-radial-6"
+				},
+				{
+					"gradient": "radial-gradient(circle, rgba(57, 255, 20, 0.04) 0%, transparent 70%)",
+					"name": "Radial Gradient 7",
+					"slug": "extracted-radial-7"
+				},
+				{
+					"gradient": "radial-gradient(circle, rgba(0, 229, 255, 0.05) 0%, transparent 70%)",
+					"name": "Radial Gradient 8",
+					"slug": "extracted-radial-8"
+				},
+				{
+					"gradient": "linear-gradient(180deg, rgba(8, 8, 26, 0.3) 0%, rgba(8, 8, 26, 0.92) 100%)",
+					"name": "Linear Gradient 9",
+					"slug": "extracted-linear-9"
+				},
+				{
+					"gradient": "linear-gradient(180deg, rgba(8, 8, 26, 0.2) 0%, rgba(8, 8, 26, 0.88) 100%)",
+					"name": "Linear Gradient 10",
+					"slug": "extracted-linear-10"
+				},
+				{
+					"gradient": "linear-gradient(180deg,\n    rgba(8, 8, 26, 0.2) 0%,\n    rgba(8, 8, 26, 0.6) 40%,\n    rgba(8, 8, 26, 0.95) 100%\n  )",
+					"name": "Linear Gradient 11",
+					"slug": "extracted-linear-11"
+				},
+				{
+					"gradient": "linear-gradient(180deg,\n    rgba(8, 8, 26, 0.1) 0%,\n    rgba(8, 8, 26, 0.5) 40%,\n    rgba(8, 8, 26, 0.9) 100%\n  )",
+					"name": "Linear Gradient 12",
+					"slug": "extracted-linear-12"
+				},
+				{
+					"gradient": "linear-gradient(\n    0deg,\n    transparent,\n    transparent 2px,\n    rgba(0,0,0,0.06) 2px,\n    rgba(0,0,0,0.06) 4px\n  )",
+					"name": "Linear Gradient 13",
+					"slug": "extracted-linear-13"
+				},
+				{
+					"gradient": "radial-gradient(ellipse at 30% 50%, rgba(255, 45, 123, 0.06) 0%, transparent 50%)",
+					"name": "Radial Gradient 14",
+					"slug": "extracted-radial-14"
+				},
+				{
+					"gradient": "radial-gradient(ellipse at 70% 50%, rgba(0, 229, 255, 0.05) 0%, transparent 50%)",
+					"name": "Radial Gradient 15",
+					"slug": "extracted-radial-15"
+				}
+			],
+			"palette": [
+				{
+					"color": "#08081a",
+					"name": "Bg Deep",
+					"slug": "bg-deep"
+				},
+				{
+					"color": "#0e0e28",
+					"name": "Bg Mid",
+					"slug": "bg-mid"
+				},
+				{
+					"color": "#12122e",
+					"name": "Bg Card",
+					"slug": "bg-card"
+				},
+				{
+					"color": "#181844",
+					"name": "Bg Card Hover",
+					"slug": "bg-card-hover"
+				},
+				{
+					"color": "#ff2d7b",
+					"name": "Neon Pink",
+					"slug": "neon-pink"
+				},
+				{
+					"color": "rgba(255, 45, 123, 0.15)",
+					"name": "Neon Pink Dim",
+					"slug": "neon-pink-dim"
+				},
+				{
+					"color": "#00e5ff",
+					"name": "Neon Cyan",
+					"slug": "neon-cyan"
+				},
+				{
+					"color": "rgba(0, 229, 255, 0.12)",
+					"name": "Neon Cyan Dim",
+					"slug": "neon-cyan-dim"
+				},
+				{
+					"color": "#39ff14",
+					"name": "Neon Green",
+					"slug": "neon-green"
+				},
+				{
+					"color": "rgba(57, 255, 20, 0.12)",
+					"name": "Neon Green Dim",
+					"slug": "neon-green-dim"
+				},
+				{
+					"color": "#f0e6d6",
+					"name": "Text Warm",
+					"slug": "text-warm"
+				},
+				{
+					"color": "#7a7592",
+					"name": "Text Dim",
+					"slug": "text-dim"
+				},
+				{
+					"color": "#b0a8c4",
+					"name": "Text Mid",
+					"slug": "text-mid"
+				},
+				{
+					"color": "rgba(122, 117, 146, 0.18)",
+					"name": "Border Subtle",
+					"slug": "border-subtle"
+				},
+				{
+					"color": "rgba(0, 229, 255, 0.4)",
+					"name": "Border Active",
+					"slug": "border-active"
+				}
+			]
+		},
+		"custom": {
+			"fontWeight": {
+				"black": "900",
+				"bold": "700",
+				"extrabold": "800",
+				"extralight": "200",
+				"light": "300",
+				"medium": "500",
+				"normal": "400",
+				"semibold": "600",
+				"thin": "100"
+			},
+			"lineHeight": {
+				"loose": "2",
+				"none": "1",
+				"normal": "1.5",
+				"relaxed": "1.625",
+				"snug": "1.25",
+				"tight": "1.1"
+			}
+		},
+		"layout": {
+			"contentSize": "1200px",
+			"wideSize": "1400px"
+		},
+		"shadow": {
+			"defaultPresets": false,
+			"presets": [
+				{
+					"name": "Shadow 1",
+					"shadow": "0 0 6px rgba(255, 45, 123, 0.5)",
+					"slug": "extracted-1"
+				},
+				{
+					"name": "Shadow 2",
+					"shadow": "0 0 6px rgba(57,255,20,0.6)",
+					"slug": "extracted-2"
+				},
+				{
+					"name": "Inner Shadow 3",
+					"shadow": "0 0 12px rgba(0,229,255,0.15), inset 0 0 12px rgba(0,229,255,0.05)",
+					"slug": "extracted-inner-3"
+				},
+				{
+					"name": "Layered Shadow 4",
+					"shadow": "0 0 12px rgba(255,45,123,0.4),\n    0 0 30px rgba(255,45,123,0.15)",
+					"slug": "extracted-layered-4"
+				},
+				{
+					"name": "Layered Shadow 5",
+					"shadow": "0 0 16px rgba(255,45,123,0.6),\n    0 0 50px rgba(255,45,123,0.25)",
+					"slug": "extracted-layered-5"
+				},
+				{
+					"name": "Inner Shadow 6",
+					"shadow": "0 0 40px rgba(255, 45, 123, 0.1), inset 0 0 40px rgba(255, 45, 123, 0.03)",
+					"slug": "extracted-inner-6"
+				},
+				{
+					"name": "Layered Shadow 7",
+					"shadow": "0 8px 32px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 229, 255, 0.05)",
+					"slug": "extracted-layered-7"
+				},
+				{
+					"name": "Inner Shadow 8",
+					"shadow": "0 0 20px rgba(0, 229, 255, 0.15), inset 0 0 20px rgba(0, 229, 255, 0.05)",
+					"slug": "extracted-inner-8"
+				},
+				{
+					"name": "Shadow 9",
+					"shadow": "0 0 40px rgba(255, 45, 123, 0.08)",
+					"slug": "extracted-9"
+				},
+				{
+					"name": "Inner Shadow 10",
+					"shadow": "0 0 12px rgba(0, 229, 255, 0.12), inset 0 0 12px rgba(0, 229, 255, 0.04)",
+					"slug": "extracted-inner-10"
+				},
+				{
+					"name": "Shadow 11",
+					"shadow": "0 0 6px rgba(0, 229, 255, 0.5)",
+					"slug": "extracted-11"
+				},
+				{
+					"name": "Shadow 12",
+					"shadow": "0 0 12px rgba(0, 229, 255, 0.15)",
+					"slug": "extracted-12"
+				},
+				{
+					"name": "Shadow 13",
+					"shadow": "0 0 14px rgba(255, 45, 123, 0.4)",
+					"slug": "extracted-13"
+				}
+			]
+		},
+		"spacing": {
+			"blockGap": null,
+			"defaultSpacingSizes": false,
+			"spacingSizes": [
+				{
+					"name": "X-Small",
+					"size": "0.5rem",
+					"slug": "20"
+				},
+				{
+					"name": "Small",
+					"size": "1rem",
+					"slug": "30"
+				},
+				{
+					"name": "Medium",
+					"size": "2rem",
+					"slug": "40"
+				},
+				{
+					"name": "Large",
+					"size": "4rem",
+					"slug": "50"
+				},
+				{
+					"name": "X-Large",
+					"size": "6rem",
+					"slug": "60"
+				},
+				{
+					"name": "Spacing 65",
+					"size": "8rem",
+					"slug": "65"
+				}
+			],
+			"units": [
+				"px",
+				"em",
+				"rem",
+				"%",
+				"vh",
+				"vw"
+			]
+		},
+		"typography": {
+			"defaultFontSizes": false,
+			"fluid": true,
+			"fontFamilies": [
+				{
+					"fontFace": [
+						{
+							"fontFamily": "Chakra Petch",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/chakra-petch/400-thai.woff2"
+							],
+							"unicodeRange": "U+02D7, U+0303, U+0331, U+0E01-0E5B, U+200C-200D, U+25CC"
+						},
+						{
+							"fontFamily": "Chakra Petch",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/chakra-petch/400-vietnamese.woff2"
+							],
+							"unicodeRange": "U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB"
+						},
+						{
+							"fontFamily": "Chakra Petch",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/chakra-petch/400-latin-ext.woff2"
+							],
+							"unicodeRange": "U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF"
+						},
+						{
+							"fontFamily": "Chakra Petch",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/chakra-petch/400-latin.woff2"
+							],
+							"unicodeRange": "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD"
+						},
+						{
+							"fontFamily": "Chakra Petch",
+							"fontStyle": "normal",
+							"fontWeight": "600",
+							"src": [
+								"file:./assets/fonts/chakra-petch/600-thai.woff2"
+							],
+							"unicodeRange": "U+02D7, U+0303, U+0331, U+0E01-0E5B, U+200C-200D, U+25CC"
+						},
+						{
+							"fontFamily": "Chakra Petch",
+							"fontStyle": "normal",
+							"fontWeight": "600",
+							"src": [
+								"file:./assets/fonts/chakra-petch/600-vietnamese.woff2"
+							],
+							"unicodeRange": "U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB"
+						},
+						{
+							"fontFamily": "Chakra Petch",
+							"fontStyle": "normal",
+							"fontWeight": "600",
+							"src": [
+								"file:./assets/fonts/chakra-petch/600-latin-ext.woff2"
+							],
+							"unicodeRange": "U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF"
+						},
+						{
+							"fontFamily": "Chakra Petch",
+							"fontStyle": "normal",
+							"fontWeight": "600",
+							"src": [
+								"file:./assets/fonts/chakra-petch/600-latin.woff2"
+							],
+							"unicodeRange": "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD"
+						},
+						{
+							"fontFamily": "Chakra Petch",
+							"fontStyle": "normal",
+							"fontWeight": "700",
+							"src": [
+								"file:./assets/fonts/chakra-petch/700-thai.woff2"
+							],
+							"unicodeRange": "U+02D7, U+0303, U+0331, U+0E01-0E5B, U+200C-200D, U+25CC"
+						},
+						{
+							"fontFamily": "Chakra Petch",
+							"fontStyle": "normal",
+							"fontWeight": "700",
+							"src": [
+								"file:./assets/fonts/chakra-petch/700-vietnamese.woff2"
+							],
+							"unicodeRange": "U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB"
+						},
+						{
+							"fontFamily": "Chakra Petch",
+							"fontStyle": "normal",
+							"fontWeight": "700",
+							"src": [
+								"file:./assets/fonts/chakra-petch/700-latin-ext.woff2"
+							],
+							"unicodeRange": "U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF"
+						},
+						{
+							"fontFamily": "Chakra Petch",
+							"fontStyle": "normal",
+							"fontWeight": "700",
+							"src": [
+								"file:./assets/fonts/chakra-petch/700-latin.woff2"
+							],
+							"unicodeRange": "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD"
+						}
+					],
+					"fontFamily": "\"Chakra Petch\", sans-serif",
+					"name": "Chakra Petch",
+					"slug": "chakra-petch"
+				},
+				{
+					"fontFace": [
+						{
+							"fontFamily": "IBM Plex Mono",
+							"fontStyle": "italic",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/ibm-plex-mono/400-italic-cyrillic-ext.woff2"
+							],
+							"unicodeRange": "U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F"
+						},
+						{
+							"fontFamily": "IBM Plex Mono",
+							"fontStyle": "italic",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/ibm-plex-mono/400-italic-cyrillic.woff2"
+							],
+							"unicodeRange": "U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116"
+						},
+						{
+							"fontFamily": "IBM Plex Mono",
+							"fontStyle": "italic",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/ibm-plex-mono/400-italic-vietnamese.woff2"
+							],
+							"unicodeRange": "U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB"
+						},
+						{
+							"fontFamily": "IBM Plex Mono",
+							"fontStyle": "italic",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/ibm-plex-mono/400-italic-latin-ext.woff2"
+							],
+							"unicodeRange": "U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF"
+						},
+						{
+							"fontFamily": "IBM Plex Mono",
+							"fontStyle": "italic",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/ibm-plex-mono/400-italic-latin.woff2"
+							],
+							"unicodeRange": "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD"
+						},
+						{
+							"fontFamily": "IBM Plex Mono",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/ibm-plex-mono/400-cyrillic-ext.woff2"
+							],
+							"unicodeRange": "U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F"
+						},
+						{
+							"fontFamily": "IBM Plex Mono",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/ibm-plex-mono/400-cyrillic.woff2"
+							],
+							"unicodeRange": "U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116"
+						},
+						{
+							"fontFamily": "IBM Plex Mono",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/ibm-plex-mono/400-vietnamese.woff2"
+							],
+							"unicodeRange": "U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB"
+						},
+						{
+							"fontFamily": "IBM Plex Mono",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/ibm-plex-mono/400-latin-ext.woff2"
+							],
+							"unicodeRange": "U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF"
+						},
+						{
+							"fontFamily": "IBM Plex Mono",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/ibm-plex-mono/400-latin.woff2"
+							],
+							"unicodeRange": "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD"
+						},
+						{
+							"fontFamily": "IBM Plex Mono",
+							"fontStyle": "normal",
+							"fontWeight": "500",
+							"src": [
+								"file:./assets/fonts/ibm-plex-mono/500-cyrillic-ext.woff2"
+							],
+							"unicodeRange": "U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F"
+						},
+						{
+							"fontFamily": "IBM Plex Mono",
+							"fontStyle": "normal",
+							"fontWeight": "500",
+							"src": [
+								"file:./assets/fonts/ibm-plex-mono/500-cyrillic.woff2"
+							],
+							"unicodeRange": "U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116"
+						},
+						{
+							"fontFamily": "IBM Plex Mono",
+							"fontStyle": "normal",
+							"fontWeight": "500",
+							"src": [
+								"file:./assets/fonts/ibm-plex-mono/500-vietnamese.woff2"
+							],
+							"unicodeRange": "U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB"
+						},
+						{
+							"fontFamily": "IBM Plex Mono",
+							"fontStyle": "normal",
+							"fontWeight": "500",
+							"src": [
+								"file:./assets/fonts/ibm-plex-mono/500-latin-ext.woff2"
+							],
+							"unicodeRange": "U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF"
+						},
+						{
+							"fontFamily": "IBM Plex Mono",
+							"fontStyle": "normal",
+							"fontWeight": "500",
+							"src": [
+								"file:./assets/fonts/ibm-plex-mono/500-latin.woff2"
+							],
+							"unicodeRange": "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD"
+						},
+						{
+							"fontFamily": "IBM Plex Mono",
+							"fontStyle": "normal",
+							"fontWeight": "600",
+							"src": [
+								"file:./assets/fonts/ibm-plex-mono/600-cyrillic-ext.woff2"
+							],
+							"unicodeRange": "U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F"
+						},
+						{
+							"fontFamily": "IBM Plex Mono",
+							"fontStyle": "normal",
+							"fontWeight": "600",
+							"src": [
+								"file:./assets/fonts/ibm-plex-mono/600-cyrillic.woff2"
+							],
+							"unicodeRange": "U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116"
+						},
+						{
+							"fontFamily": "IBM Plex Mono",
+							"fontStyle": "normal",
+							"fontWeight": "600",
+							"src": [
+								"file:./assets/fonts/ibm-plex-mono/600-vietnamese.woff2"
+							],
+							"unicodeRange": "U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB"
+						},
+						{
+							"fontFamily": "IBM Plex Mono",
+							"fontStyle": "normal",
+							"fontWeight": "600",
+							"src": [
+								"file:./assets/fonts/ibm-plex-mono/600-latin-ext.woff2"
+							],
+							"unicodeRange": "U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF"
+						},
+						{
+							"fontFamily": "IBM Plex Mono",
+							"fontStyle": "normal",
+							"fontWeight": "600",
+							"src": [
+								"file:./assets/fonts/ibm-plex-mono/600-latin.woff2"
+							],
+							"unicodeRange": "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD"
+						}
+					],
+					"fontFamily": "\"IBM Plex Mono\", sans-serif",
+					"name": "IBM Plex Mono",
+					"slug": "ibm-plex-mono"
+				}
+			],
+			"fontSizes": [
+				{
+					"name": "Small",
+					"size": "0.8rem",
+					"slug": "small"
+				},
+				{
+					"name": "Medium",
+					"size": "1rem",
+					"slug": "medium"
+				},
+				{
+					"name": "Large",
+					"size": "1.125rem",
+					"slug": "large"
+				},
+				{
+					"name": "Extra Large",
+					"size": "1.25rem",
+					"slug": "x-large"
+				},
+				{
+					"name": "2X Large",
+					"size": "1.5rem",
+					"slug": "xx-large"
+				},
+				{
+					"fluid": {
+						"max": "2rem",
+						"min": "1.5rem"
+					},
+					"name": "Huge",
+					"size": "2rem",
+					"slug": "huge"
+				},
+				{
+					"fluid": {
+						"max": "3rem",
+						"min": "2rem"
+					},
+					"name": "Huge 2",
+					"size": "3rem",
+					"slug": "huge-2"
+				},
+				{
+					"fluid": {
+						"max": "9rem",
+						"min": "3.2rem"
+					},
+					"name": "Gigantic",
+					"size": "9rem",
+					"slug": "gigantic"
+				}
+			]
+		},
+		"useRootPaddingAwareAlignments": true
+	},
+	"styles": {
+		"blocks": {
+			"core/code": {
+				"color": {
+					"background": "transparent"
+				},
+				"spacing": {
+					"margin": {
+						"bottom": "0",
+						"top": "0"
+					},
+					"padding": {
+						"bottom": "0",
+						"left": "0",
+						"right": "0",
+						"top": "0"
+					}
+				},
+				"typography": {
+					"fontFamily": "inherit",
+					"fontSize": "inherit"
+				}
+			},
+			"core/details": {
+				"spacing": {
+					"margin": {
+						"bottom": "0",
+						"top": "0"
+					}
+				}
+			},
+			"core/list": {
+				"spacing": {
+					"margin": {
+						"bottom": "0",
+						"top": "0"
+					},
+					"padding": {
+						"left": "0"
+					}
+				},
+				"typography": {
+					"fontSize": "inherit",
+					"lineHeight": "inherit"
+				}
+			},
+			"core/navigation": {
+				"typography": {
+					"fontFamily": "inherit",
+					"fontSize": "inherit",
+					"lineHeight": "inherit"
+				}
+			},
+			"core/navigation-link": {
+				"typography": {
+					"fontFamily": "inherit",
+					"fontSize": "inherit"
+				}
+			},
+			"core/quote": {
+				"border": {
+					"left": {
+						"color": "var(--wp--preset--color--bg-deep)",
+						"style": "solid",
+						"width": "4px"
+					}
+				},
+				"spacing": {
+					"padding": {
+						"left": "var(--wp--preset--spacing--40, 1.5rem)"
+					}
+				}
+			},
+			"core/separator": {
+				"border": {
+					"style": "none",
+					"width": "0"
+				},
+				"spacing": {
+					"margin": {
+						"bottom": "0",
+						"top": "0"
+					}
+				}
+			},
+			"core/table": {
+				"spacing": {
+					"margin": {
+						"bottom": "0",
+						"top": "0"
+					}
+				}
+			}
+		},
+		"css": ".post-type-page .editor-post-title { display: none !important; }\n.post-type-post.editor-styles-wrapper { padding: 2rem; }\n.post-type-post .editor-post-title__input { font-size: 2.5rem; }",
+		"elements": {
+			"button": {
+				":focus": {
+					"outline": {
+						"offset": "2px",
+						"style": "solid",
+						"width": "2px"
+					}
+				},
+				":hover": {
+					"color": {
+						"background": "inherit",
+						"text": "inherit"
+					}
+				},
+				"border": {
+					"radius": "0",
+					"style": "none",
+					"width": "0"
+				},
+				"typography": {
+					"fontFamily": "inherit",
+					"fontSize": "inherit",
+					"lineHeight": "inherit"
+				}
+			},
+			"heading": {
+				"color": {
+					"text": "inherit"
+				},
+				"typography": {
+					"fontFamily": "inherit",
+					"fontWeight": "inherit",
+					"lineHeight": "inherit"
+				}
+			},
+			"link": {
+				":focus": {
+					"outline": {
+						"offset": "2px",
+						"style": "solid",
+						"width": "2px"
+					}
+				},
+				":hover": {
+					"color": {
+						"text": "inherit"
+					},
+					"typography": {
+						"textDecoration": "underline"
+					}
+				},
+				"color": {
+					"text": "inherit"
+				}
+			}
+		},
+		"spacing": {
+			"blockGap": "0",
+			"padding": {
+				"bottom": "0",
+				"left": "0",
+				"right": "0",
+				"top": "0"
+			}
+		}
+	},
+	"templateParts": [
+		{
+			"area": "header",
+			"name": "header",
+			"title": "Header"
+		},
+		{
+			"area": "footer",
+			"name": "footer",
+			"title": "Footer"
+		}
+	]
 }
