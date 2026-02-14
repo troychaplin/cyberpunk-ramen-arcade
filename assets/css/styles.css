@@ -3691,17 +3691,86 @@ header:has(.wp-block-navigation .is-menu-open) {
         .editor-styles-wrapper .post-header-zone {
           padding: 80px var(--space-md) 60px !important;
         }
-
     /* Page template hero — compact height */
-        :root :where(.post-header-zone--page) {
-          min-height: 420px;
-          padding: 50px var(--space-md) 40px;
-        }
-        
-        .editor-styles-wrapper .post-header-zone--page {
-          min-height: 420px !important;
-          padding: 50px var(--space-md) 40px !important;
-        }
+            :root :where(.post-header-zone--page) {
+              min-height: 420px;
+              padding: 50px var(--space-md) 40px;
+            }
+            
+            .editor-styles-wrapper .post-header-zone--page {
+              min-height: 420px !important;
+              padding: 50px var(--space-md) 40px !important;
+            }
+
+/* ============================================
+   ARCHIVE / CATEGORY — Full-Page Hero Atmosphere
+   ============================================ */
+body.archive,
+    body.category {
+      background-color: #08081a;
+      background-image:
+        linear-gradient(rgba(8, 8, 26, 0.85), rgba(8, 8, 26, 0.85)),
+        url('/wp-content/uploads/2026/02/post-hero-atmosphere.jpg');
+      background-size: cover;
+      background-position: center 30%;
+      background-attachment: fixed;
+      position: relative;
+    }
+
+    /* Remove blog-section background on archive/category pages */
+    body.archive .blog-section,
+    body.category .blog-section {
+      background: transparent;
+    }
+
+/* Scanlines + vertical fade overlay */
+body.archive::before,
+body.category::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background:
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      rgba(0, 0, 0, 0.08) 2px,
+      rgba(0, 0, 0, 0.08) 4px
+    ),
+    linear-gradient(
+      180deg,
+      rgba(8, 8, 26, 0.4) 0%,
+      rgba(8, 8, 26, 0.2) 15%,
+      rgba(8, 8, 26, 0.6) 50%,
+      rgba(8, 8, 26, 0.85) 75%,
+      rgba(8, 8, 26, 1) 100%
+    );
+  pointer-events: none;
+  z-index: 0;
+  animation: postHeroScanDrift 8s linear infinite;
+}
+
+/* Neon fog — pink/cyan radial glows */
+body.archive::after,
+body.category::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 20% 50%, rgba(255, 45, 123, 0.12) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 30%, rgba(0, 229, 255, 0.10) 0%, transparent 50%),
+    radial-gradient(ellipse at 50% 100%, rgba(8, 8, 26, 0.95) 0%, transparent 60%);
+  pointer-events: none;
+  z-index: 0;
+  animation: postHeroFogPulse 6s ease-in-out infinite;
+}
+
+/* Ensure all page content sits above the overlays */
+body.archive .wp-site-blocks,
+body.category .wp-site-blocks {
+  position: relative;
+  z-index: 1;
+}
 
 /* Reading Zone spacing */
 :root :where(.reading-zone__inner) {
