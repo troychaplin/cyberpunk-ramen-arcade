@@ -170,7 +170,9 @@ ul, ol {
 }
 
 .hero-nav-logo:hover {
-  text-shadow: 0 0 14px rgba(0, 229, 255, 0.6);
+    text-shadow: 0 0 14px rgba(0, 229, 255, 0.6);
+    color: var(--wp--preset--color--neon-pink);
+    text-decoration: none;
 }
 
 .hero-nav-links {
@@ -777,7 +779,7 @@ font-size: var(--wp--preset--font-size--xx-large);
     }
 
     .archive-pagination__nav .page-numbers.current {
-      color: var(--wp--preset--color--bg-dark);
+      color: var(--wp--preset--color--bg-deep);
       background: var(--wp--preset--color--neon-cyan);
       border-color: var(--wp--preset--color--neon-cyan);
       box-shadow: 0 0 16px rgba(0, 229, 255, 0.3);
