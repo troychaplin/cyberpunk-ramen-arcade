@@ -2591,6 +2591,7 @@ header:has(.wp-block-navigation .is-menu-open) {
         }
     
         /* Design Tokens (scoped) */
+    .post-section-header,
     .post-header-zone,
     .reading-zone,
     .post-footer-zone {
@@ -2765,58 +2766,58 @@ header:has(.wp-block-navigation .is-menu-open) {
 
     /* HUD Metadata Row */
     .hud-metadata {
-          display: flex;
-          align-items: center;
-          justify-content: center;
+              display: flex;
+              align-items: center;
+              justify-content: center;
           gap: 28px;
           flex-wrap: wrap;
           margin-bottom: var(--space-sm);
-          padding: 12px 24px;
-          background: rgba(0, 229, 255, 0.03);
-          border: 1px solid rgba(0, 229, 255, 0.08);
-          border-radius: 2px;
-          position: relative;
+padding: 0;
+              background: none;
+              border: none;
+              border-radius: 0;
+              position: relative;
         }
-
-        .hud-metadata::before {
-          content: '[ ';
+.hud-metadata::before {
+              content: none;
           color: rgba(0, 229, 255, 0.25);
           font-family: var(--font-mono);
           font-size: 0.7rem;
         }
-        .hud-metadata::after {
-          content: ' ]';
+.hud-metadata::after {
+              content: none;
           color: rgba(0, 229, 255, 0.25);
           font-family: var(--font-mono);
           font-size: 0.7rem;
         }
-    .hud-stat {
-          font-family: var(--font-mono);
-          font-size: 0.72rem;
-          font-weight: 500;
-          color: var(--color-neon-cyan);
-          letter-spacing: 0.1em;
-          text-transform: uppercase;
-          margin: 0;
-          text-shadow: 0 0 8px rgba(0, 229, 255, 0.4), 0 0 20px rgba(0, 229, 255, 0.15);
-          animation: hudStatGlow 3s ease-in-out infinite;
-        }
+.hud-stat {
+              font-family: var(--font-mono);
+              font-size: 0.8rem;
+              font-weight: 400;
+              color: var(--wp--preset--color--text-dim);
+              letter-spacing: 0.05em;
+              text-transform: none;
+              margin: 0;
+              text-shadow: none;
+              animation: none;
+            }
 
         @keyframes hudStatGlow {
           0%, 100% { text-shadow: 0 0 8px rgba(0, 229, 255, 0.4), 0 0 20px rgba(0, 229, 255, 0.15); opacity: 0.9; }
           50% { text-shadow: 0 0 6px rgba(0, 229, 255, 0.3), 0 0 14px rgba(0, 229, 255, 0.1); opacity: 0.75; }
         }
-    .hud-separator {
-          font-size: 0.6rem;
-          color: rgba(0, 229, 255, 0.2);
-          margin: 0;
-          line-height: 1;
-          text-shadow: 0 0 4px rgba(0, 229, 255, 0.2);
-        }
-    .hud-read-time {
-          color: var(--color-neon-green);
-          text-shadow: 0 0 8px rgba(57, 255, 20, 0.4), 0 0 20px rgba(57, 255, 20, 0.15);
-        }
+.hud-separator {
+              font-size: 0.8rem;
+              color: var(--wp--preset--color--text-dim);
+              margin: 0;
+              line-height: 1;
+              text-shadow: none;
+              opacity: 0.5;
+            }
+.hud-read-time {
+              color: var(--wp--preset--color--text-dim);
+              text-shadow: none;
+            }
 
     .hud-categories {
       color: var(--color-neon-pink);
@@ -2910,7 +2911,7 @@ header:has(.wp-block-navigation .is-menu-open) {
        2. CONTENT READING ZONE
        ============================================ */
 .reading-zone {
-          background-color: var(--color-bg-deep);
+              background-color: transparent;
       position: relative;
       overflow: hidden;
       font-family: var(--font-mono);
@@ -2932,8 +2933,8 @@ header:has(.wp-block-navigation .is-menu-open) {
     } */
 
     /* CRT scanlines overlay */
-    .reading-zone::after {
-      content: '';
+.reading-zone::after {
+          content: none;
       position: absolute;
       inset: 0;
       background: repeating-linear-gradient(
@@ -3163,7 +3164,7 @@ header:has(.wp-block-navigation .is-menu-open) {
        3. POST FOOTER ZONE
        ============================================ */
     .post-footer-zone {
-      background-color: var(--color-bg-deep);
+      /* background-color: var(--color-bg-deep); */
       padding: 48px var(--space-md);
       font-family: var(--font-mono);
       color: var(--color-text-warm);
@@ -3349,10 +3350,13 @@ header:has(.wp-block-navigation .is-menu-open) {
       .hud-metadata {
         gap: 12px;
       }
-
       .reading-zone__inner {
-        padding: var(--space-md) var(--space-sm);
-      }
+            padding: var(--space-md) var(--space-sm);
+          }
+
+          .post-section-header .section-header {
+            padding-inline: var(--space-sm);
+          }
 
       .post-reading-content {
         font-size: var(--font-size-base);
@@ -3718,6 +3722,59 @@ header:has(.wp-block-navigation .is-menu-open) {
   gap: var(--space-md) !important;
 }
 /* :::SECTION:Section Spacing::: */
+
+    /* Post Section Header (clean header replacing hero) */
+    .post-section-header {
+      background: transparent;
+      position: relative;
+      z-index: 1;
+    }
+    .post-section-header .section-header {
+          margin-bottom: 0;
+          max-width: 720px;
+          margin-inline: auto;
+          padding-inline: var(--space-md);
+        }
+.post-section-header .hud-metadata {
+          justify-content: flex-start;
+          background: none;
+          border: none;
+          border-radius: 0;
+          padding: 0;
+          margin-top: var(--space-sm);
+        }
+
+    .editor-styles-wrapper .post-section-header .hud-metadata {
+      justify-content: flex-start !important;
+    }
+    .editor-styles-wrapper .post-section-header .section-header {
+          margin-bottom: 0 !important;
+          max-width: 720px !important;
+          margin-inline: auto !important;
+          padding-inline: var(--space-md) !important;
+        }
+
+    /* Post-title block needs specificity boost for section-title styles */
+.post-section-header .wp-block-post-title.section-title {
+          font-family: var(--font-display);
+          font-size: clamp(2.5rem, 5vw, 4.5rem);
+          font-weight: 700;
+          text-transform: none;
+          letter-spacing: 0.01em;
+      color: var(--wp--preset--color--text-warm);
+      line-height: 1.1;
+      margin-bottom: var(--wp--preset--spacing--30);
+    }
+.editor-styles-wrapper .post-section-header .wp-block-post-title.section-title {
+          font-family: var(--font-display) !important;
+          font-size: clamp(2.5rem, 5vw, 4.5rem) !important;
+          font-weight: 700 !important;
+          text-transform: none !important;
+          letter-spacing: 0.01em !important;
+      color: var(--wp--preset--color--text-warm) !important;
+      line-height: 1.1 !important;
+    }
+
     /* Post Header Zone spacing */
         :root :where(.post-header-zone) {
           padding: 80px var(--space-md) 60px;
@@ -3736,12 +3793,10 @@ header:has(.wp-block-navigation .is-menu-open) {
               min-height: 420px !important;
               padding: 50px var(--space-md) 40px !important;
             }
-
 /* ============================================
-   ARCHIVE / CATEGORY — Full-Page Hero Atmosphere
+   ALL TEMPLATES (except frontpage) — Full-Page Hero Atmosphere
    ============================================ */
-body.archive,
-    body.category {
+    body:not(.home) {
       background-color: #08081a;
       background-image:
         linear-gradient(rgba(8, 8, 26, 0.85), rgba(8, 8, 26, 0.85)),
@@ -3751,16 +3806,13 @@ body.archive,
       background-attachment: fixed;
       position: relative;
     }
-
-    /* Remove blog-section background on archive/category pages */
-    body.archive .blog-section,
-    body.category .blog-section {
+/* Remove blog-section background on non-home pages */
+        body:not(.home) .blog-section {
       background: transparent;
     }
 
 /* Scanlines + vertical fade overlay */
-body.archive::before,
-body.category::before {
+body:not(.home)::before {
   content: '';
   position: fixed;
   inset: 0;
@@ -3786,8 +3838,7 @@ body.category::before {
 }
 
 /* Neon fog — pink/cyan radial glows */
-body.archive::after,
-body.category::after {
+body:not(.home)::after {
   content: '';
   position: fixed;
   inset: 0;
@@ -3801,8 +3852,7 @@ body.category::after {
 }
 
 /* Ensure all page content sits above the overlays */
-body.archive .wp-site-blocks,
-body.category .wp-site-blocks {
+body:not(.home) .wp-site-blocks {
   position: relative;
   z-index: 1;
 }

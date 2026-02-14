@@ -1,53 +1,33 @@
 <!-- wp:template-part {"slug":"header","tagName":"header","align":"full"} /-->
 
-<!-- wp:group {"tagName":"section","metadata":{"name":"Post Header Zone"},"align":"full","className":"post-header-zone"} -->
-<section class="wp-block-group alignfull post-header-zone"><!-- wp:group {"metadata":{"name":"Post Header Inner"},"className":"post-header__inner"} -->
-<div class="wp-block-group post-header__inner"><!-- wp:post-title {"level":1,"className":"neon-post-title"} /-->
+<!-- wp:group {"tagName":"section","metadata":{"name":"Post Section Header"},"align":"full","className":"post-section-header","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|40","left":"0","right":"0"}}},"layout":{"type":"constrained","contentSize":"720px"}} -->
+<section class="wp-block-group alignfull post-section-header" style="padding-top:var(--wp--preset--spacing--60);padding-right:0;padding-bottom:var(--wp--preset--spacing--40);padding-left:0"><!-- wp:group {"metadata":{"name":"Section Header"},"className":"section-header","layout":{"type":"default"}} -->
+<div class="wp-block-group section-header"><!-- wp:paragraph {"className":"section-tag"} -->
+<p class="section-tag">// post.read()</p>
+<!-- /wp:paragraph -->
 
-<!-- wp:group {"metadata":{"name":"HUD Metadata"},"className":"hud-metadata animate-on-scroll","layout":{"type":"flex","justifyContent":"center"}} -->
-<div class="wp-block-group hud-metadata animate-on-scroll"><!-- wp:post-date {"metadata":{"bindings":{"datetime":{"source":"core/post-data","args":{"field":"date"}}}},"className":"hud-stat"} /-->
+<!-- wp:post-title {"level":1,"className":"section-title"} /-->
 
-<!-- wp:paragraph {"className":"wp-block-paragraph hud-separator"} -->
-<p class="wp-block-paragraph hud-separator">·</p>
+<!-- wp:group {"metadata":{"name":"Post Meta"},"className":"hud-metadata","layout":{"type":"flex","justifyContent":"left"}} -->
+<div class="wp-block-group hud-metadata"><!-- wp:post-date {"metadata":{"bindings":{"datetime":{"source":"core/post-data","args":{"field":"date"}}}},"className":"hud-stat"} /-->
+
+<!-- wp:paragraph {"className":"hud-separator"} -->
+<p class="hud-separator">·</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
-<div class="wp-block-group"><!-- wp:paragraph {"className":"wp-block-paragraph hud-stat hud-read-time"} -->
-<p class="wp-block-paragraph hud-stat hud-read-time">☕ </p>
+<div class="wp-block-group"><!-- wp:paragraph {"className":"hud-stat hud-read-time"} -->
+<p class="hud-stat hud-read-time">☕ </p>
 <!-- /wp:paragraph -->
 
-<!-- wp:post-time-to-read {"displayAsRange":false,"className":"wp-block-paragraph hud-stat hud-read-time"} /--></div>
+<!-- wp:post-time-to-read {"className":"hud-stat hud-read-time"} /--></div>
 <!-- /wp:group -->
 
-<!-- wp:paragraph {"className":"wp-block-paragraph hud-separator"} -->
-<p class="wp-block-paragraph hud-separator">·</p>
+<!-- wp:paragraph {"className":"hud-separator"} -->
+<p class="hud-separator">·</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:post-terms {"term":"category","className":"hud-stat hud-categories"} /--></div>
-<!-- /wp:group -->
-
-<!-- wp:group {"metadata":{"name":"Arcade Share Bar"},"className":"arcade-share-bar animate-on-scroll","layout":{"type":"flex","justifyContent":"center"}} -->
-<div class="wp-block-group arcade-share-bar animate-on-scroll"><!-- wp:paragraph {"className":"wp-block-paragraph share-label"} -->
-<p class="wp-block-paragraph share-label">SHARE //</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:group {"metadata":{"name":"Arcade Buttons"},"className":"arcade-buttons","layout":{"type":"flex"}} -->
-<div class="wp-block-group arcade-buttons"><!-- wp:paragraph {"className":"wp-block-paragraph arcade-btn"} -->
-<p class="wp-block-paragraph arcade-btn">𝕏</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph {"className":"wp-block-paragraph arcade-btn"} -->
-<p class="wp-block-paragraph arcade-btn">in</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph {"className":"wp-block-paragraph arcade-btn"} -->
-<p class="wp-block-paragraph arcade-btn">✉</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph {"className":"wp-block-paragraph arcade-btn"} -->
-<p class="wp-block-paragraph arcade-btn">🔗</p>
-<!-- /wp:paragraph --></div>
-<!-- /wp:group --></div>
+<!-- wp:post-terms {"term":"category","className":"hud-stat"} /--></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></section>
 <!-- /wp:group -->

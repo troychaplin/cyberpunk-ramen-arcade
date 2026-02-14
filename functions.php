@@ -60,15 +60,6 @@ function miles_cyberpunk_ramen_dev_portfolio_4b712400_enqueue_scripts() {
 add_action( 'wp_enqueue_scripts', 'miles_cyberpunk_ramen_dev_portfolio_4b712400_enqueue_scripts' );
 
 /**
- * Remove title support from pages for cleaner editing experience.
- * The homepage content provides its own visual header.
- */
-function miles_cyberpunk_ramen_dev_portfolio_4b712400_customize_pages() {
-    remove_post_type_support( 'page', 'title' );
-}
-add_action( 'init', 'miles_cyberpunk_ramen_dev_portfolio_4b712400_customize_pages' );
-
-/**
  * Add JS class to html element for animation system.
  * Outputs early in head to prevent FOUC on animated elements.
  */
