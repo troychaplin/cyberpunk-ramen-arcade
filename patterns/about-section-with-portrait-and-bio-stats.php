@@ -1,8 +1,10 @@
 <?php
 /**
  * Title: About Section with Portrait and Bio Stats
+ * Description: An about section featuring a portrait, bio, and key stats.
  * Slug: cyberpunk-ramen-arcade/about-section-with-portrait-and-bio-stats
- * Categories: 
+ * Categories: cyberpunk-ramen-arcade
+ * Post Types: page
  */
 ?>
 <!-- wp:group {"align":"full","metadata":{"name":"About Section"},"className":"about-section","tagName":"section","layout":{"type":"constrained"}} -->

@@ -284,7 +284,6 @@
 			]
 		},
 		"spacing": {
-			"blockGap": null,
 			"defaultSpacingSizes": false,
 			"spacingSizes": [
 				{
@@ -748,6 +747,26 @@
 				"typography": {
 					"fontFamily": "inherit",
 					"fontSize": "inherit"
+				}
+			},
+			"core/post-title": {
+				"elements": {
+					"link": {
+						":hover": {
+							"color": {
+								"text": "var(--wp--preset--color--neon-cyan)"
+							},
+							"typography": {
+								"textDecoration": "none"
+							}
+						},
+						"color": {
+							"text": "var(--wp--preset--color--text-warm)"
+						},
+						"typography": {
+							"textDecoration": "none"
+						}
+					}
 				}
 			},
 			"core/quote": {

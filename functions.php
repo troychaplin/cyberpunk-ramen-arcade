@@ -37,7 +37,7 @@ function miles_cyberpunk_ramen_dev_portfolio_4b712400_enqueue_frontend_styles() 
         $styles_version
     );
 }
-add_action( 'wp_enqueue_scripts', 'miles_cyberpunk_ramen_dev_portfolio_4b712400_enqueue_frontend_styles' );
+add_action( 'wp_enqueue_scripts', 'miles_cyberpunk_ramen_dev_portfolio_4b712400_enqueue_frontend_styles', 20 );
 
 /**
  * Enqueue theme scripts for frontend only
@@ -68,3 +68,13 @@ function miles_cyberpunk_ramen_dev_portfolio_4b712400_add_js_class() {
 }
 add_action( 'wp_head', 'miles_cyberpunk_ramen_dev_portfolio_4b712400_add_js_class', 1 );
 
+/**
+ * Register custom block patterns category
+ */
+function miles_cyberpunk_ramen_dev_portfolio_4b712400_register_pattern_categories() {
+    register_block_pattern_category(
+        'cyberpunk-ramen-arcade',
+        array( 'label' => __( 'Cyberpunk Ramen Arcade', 'cyberpunk-ramen-arcade' ) )
+    );
+}
+add_action( 'init', 'miles_cyberpunk_ramen_dev_portfolio_4b712400_register_pattern_categories' );

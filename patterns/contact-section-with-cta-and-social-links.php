@@ -1,8 +1,10 @@
 <?php
 /**
  * Title: Contact Section with CTA and Social Links
+ * Description: A contact section featuring a call-to-action and social media links.
  * Slug: cyberpunk-ramen-arcade/contact-section-with-cta-and-social-links
- * Categories: 
+ * Categories: cyberpunk-ramen-arcade
+ * Post Types: page
  */
 ?>
 <!-- wp:group {"align":"full","metadata":{"name":"Contact Section"},"className":"contact-section","tagName":"section","layout":{"type":"constrained"}} -->

@@ -733,13 +733,13 @@ font-size: var(--wp--preset--font-size--xx-large);
       letter-spacing: 0.1em;
       text-transform: uppercase;
     }
-    .blog-card .wp-block-post-terms a {
-          color: var(--wp--preset--color--neon-pink);
-          text-decoration: none;
-          padding: 0.2em 0.6em;
-          border: 1px solid rgba(255, 45, 123, 0.3);
-          transition: all 0.3s ease;
-        }
+.blog-card .wp-block-post-terms a {
+              color: var(--wp--preset--color--neon-pink) !important;
+              text-decoration: none !important;
+              padding: 0.2em 0.6em;
+              border: 1px solid rgba(255, 45, 123, 0.3);
+              transition: all 0.3s ease;
+            }
 
     .blog-card .wp-block-post-terms a:hover {
       background: rgba(255, 45, 123, 0.1);
@@ -1390,17 +1390,43 @@ font-size: var(--wp--preset--font-size--huge);
   line-height: 1.2;
   margin-bottom: var(--wp--preset--spacing--20);
 }
-
 .wp-block-post-title a {
-  color: var(--wp--preset--color--text-warm);
-  text-decoration: none;
-  transition: color 0.3s ease, text-shadow 0.3s ease;
-}
-
+      color: var(--wp--preset--color--text-warm) !important;
+      text-decoration: none !important;
+      transition: color 0.3s ease, text-shadow 0.3s ease;
+    }
 .wp-block-post-title a:hover {
-  color: var(--wp--preset--color--neon-pink);
-  text-shadow: 0 0 12px rgba(255, 45, 123, 0.3);
-}
+      color: var(--wp--preset--color--neon-pink) !important;
+      text-decoration: none !important;
+      text-shadow: 0 0 12px rgba(255, 45, 123, 0.3);
+    }
+
+    /* Blog card title links — scoped overrides for cross-template consistency */
+    .blog-card .wp-block-post-title a,
+    .blog-card__title a,
+    .blog-grid .wp-block-post-title a {
+      color: var(--wp--preset--color--text-warm) !important;
+      text-decoration: none !important;
+    }
+
+    .blog-card .wp-block-post-title a:hover,
+    .blog-card__title a:hover,
+    .blog-grid .wp-block-post-title a:hover {
+      color: var(--wp--preset--color--neon-cyan) !important;
+      text-decoration: none !important;
+    }
+
+    /* Blog card post-title spacing — consistent across all templates */
+    .blog-card .wp-block-post-title {
+      margin-top: 0 !important;
+      margin-bottom: var(--wp--preset--spacing--20) !important;
+    }
+
+    /* Blog card post-terms spacing — no extra gaps between category and title */
+    .blog-card .wp-block-post-terms {
+      margin-top: 0 !important;
+      margin-bottom: 0 !important;
+    }
 
 .wp-block-post-date,
 .wp-block-post-author {
@@ -1438,18 +1464,29 @@ font-size: var(--wp--preset--font-size--huge);
 .wp-block-post-content h2 { font-size: var(--wp--preset--font-size--huge); }
 .wp-block-post-content h3 { font-size: var(--wp--preset--font-size--xx-large); }
 .wp-block-post-content h4 { font-size: var(--wp--preset--font-size--x-large); }
-
 .wp-block-post-content a {
-  color: var(--wp--preset--color--neon-cyan);
-  text-decoration: underline;
-  text-decoration-color: rgba(0, 229, 255, 0.3);
-  text-underline-offset: 3px;
-  transition: text-decoration-color 0.3s ease;
-}
+      color: var(--wp--preset--color--neon-cyan);
+      text-decoration: underline;
+      text-decoration-color: rgba(0, 229, 255, 0.3);
+      text-underline-offset: 3px;
+      transition: text-decoration-color 0.3s ease;
+    }
+    
+    .wp-block-post-content a:hover {
+      text-decoration-color: var(--wp--preset--color--neon-cyan);
+    }
 
-.wp-block-post-content a:hover {
-  text-decoration-color: var(--wp--preset--color--neon-cyan);
-}
+    /* Explicit override: post-title links inside post-content */
+    .wp-block-post-content .wp-block-post-title a,
+    .wp-block-post-content .blog-card__title a {
+      color: var(--wp--preset--color--text-warm) !important;
+      text-decoration: none !important;
+    }
+    .wp-block-post-content .wp-block-post-title a:hover,
+    .wp-block-post-content .blog-card__title a:hover {
+      color: var(--wp--preset--color--neon-cyan) !important;
+      text-decoration: none !important;
+    }
 
 .wp-block-post-featured-image img {
   border: 1px solid var(--wp--preset--color--border-subtle);
@@ -1837,7 +1874,11 @@ font-size: var(--wp--preset--font-size--huge);
 
 /* Blog featured - margin parity */
 :root :where(.blog-featured) {
-  margin-block-end: var(--wp--preset--spacing--50);
+  margin-block-end: var(--wp--preset--spacing--30);
+}
+
+.blog-cta {
+    margin-top: var(--wp--preset--spacing--50);
 }
 
 .editor-styles-wrapper .blog-featured {
