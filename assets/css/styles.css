@@ -3861,12 +3861,17 @@ body:not(.home) .wp-site-blocks {
 :root :where(.reading-zone__inner) {
   padding: 60px var(--space-md);
 }
-
 .editor-styles-wrapper .reading-zone__inner {
-  padding: 60px var(--space-md) !important;
-}
+      padding: 60px var(--space-md) !important;
+    }
 
-/* Post Footer Zone spacing */
+    /* Remove reading-zone horizontal padding on frontpage */
+    body.home .reading-zone__inner {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    
+    /* Post Footer Zone spacing */
 :root :where(.post-footer-zone) {
   padding: 48px var(--space-md);
 }
