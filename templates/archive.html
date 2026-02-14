@@ -1,52 +1,48 @@
 <!-- wp:template-part {"slug":"header","tagName":"header","align":"full"} /-->
 
-<!-- wp:group {"tagName":"section","metadata":{"name":"Blog Section"},"align":"full","className":"blog-section hero-banner-bg-img","style":{"spacing":{"padding":{"top":"var:preset|spacing|50"}}},"layout":{"type":"constrained"}} -->
-<section class="wp-block-group alignfull blog-section hero-banner-bg-img" id="blog" style="padding-top:var(--wp--preset--spacing--50)"><!-- wp:group {"metadata":{"name":"Blog Inner"},"className":"blog-inner"} -->
-<div class="wp-block-group blog-inner"><!-- wp:group {"metadata":{"name":"Section Header"},"className":"section-header animate-on-scroll"} -->
-<div class="wp-block-group section-header animate-on-scroll"><!-- wp:paragraph {"className":"wp-block-paragraph section-tag"} -->
-<p class="wp-block-paragraph section-tag">// the_forbidden_scrolls</p>
+<!-- wp:group {"tagName":"section","metadata":{"name":"Blog Section"},"align":"full","className":"blog-section","style":{"spacing":{"padding":{"top":"var:preset|spacing|50"}}},"layout":{"type":"constrained"}} -->
+<section class="wp-block-group alignfull blog-section" id="blog" style="padding-top:var(--wp--preset--spacing--50)"><!-- wp:group {"metadata":{"name":"Blog Inner"},"className":"blog-inner"} -->
+<div class="wp-block-group blog-inner"><!-- wp:group {"metadata":{"name":"Section Header"},"className":"section-header animate-on-scroll","layout":{"type":"default"}} -->
+<div class="wp-block-group section-header animate-on-scroll"><!-- wp:paragraph {"className":"section-tag"} -->
+<p class="section-tag">// the_forbidden_scrolls</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"className":"section-title"} -->
 <h2 class="wp-block-heading section-title">Blog &amp; Tutorials</h2>
 <!-- /wp:heading -->
 
-<!-- wp:paragraph {"className":"wp-block-paragraph section-desc"} -->
-<p class="wp-block-paragraph section-desc">CSS Grid tricks, WordPress hooks, and forbidden knowledge scrolls.<br>Everything is actually correct and well-documented. Probably.</p>
+<!-- wp:paragraph {"className":"section-desc"} -->
+<p class="section-desc">CSS Grid tricks, WordPress hooks, and forbidden knowledge scrolls. Everything is actually correct and well-documented. Probably.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"metadata":{"name":"Blog Featured"},"className":"blog-featured animate-on-scroll"} -->
-<div class="wp-block-group blog-featured animate-on-scroll"><!-- wp:group {"tagName":"article","metadata":{"name":"Featured Blog Card"},"className":"blog-card blog-card\u002d\u002dfeatured","style":{"background":{"backgroundImage":{"url":"http://localhost:8896/wp-content/uploads/2026/02/blog-featured.jpg"},"backgroundSize":"cover","backgroundPosition":"center center"}}} -->
-<article class="wp-block-group blog-card blog-card--featured"><!-- wp:group {"className":"blog-card__overlay miles-editor-hidden"} -->
-<div class="wp-block-group blog-card__overlay miles-editor-hidden"></div>
-<!-- /wp:group -->
-
-<!-- wp:group {"metadata":{"name":"Blog Card Content"},"className":"blog-card__content"} -->
-<div class="wp-block-group blog-card__content"><!-- wp:group {"metadata":{"name":"Blog Card Meta"},"className":"blog-card__meta","layout":{"type":"flex","flexWrap":"wrap"}} -->
-<div class="wp-block-group blog-card__meta"><!-- wp:paragraph {"className":"wp-block-paragraph blog-card__category blog-card__category\u002d\u002dcss"} -->
-<p class="wp-block-paragraph blog-card__category blog-card__category--css">CSS Animation</p>
+<!-- wp:query {"queryId":9,"query":{"perPage":6,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"exclude","inherit":false},"metadata":{"categories":["posts"],"patternName":"core/query-grid-posts","name":"Grid"}} -->
+<div class="wp-block-query"><!-- wp:post-template {"className":"blog-grid","layout":{"type":"grid","columnCount":3}} -->
+<!-- wp:group {"tagName":"article","metadata":{"name":"Blog Card"},"className":"blog-card animate-on-scroll","style":{"dimensions":{"minHeight":"100%"}}} -->
+<article class="wp-block-group blog-card animate-on-scroll" style="min-height:100%"><!-- wp:group {"metadata":{"name":"Blog Card Header"},"className":"blog-card__header","layout":{"type":"flex","justifyContent":"space-between","flexWrap":"wrap"}} -->
+<div class="wp-block-group blog-card__header"><!-- wp:paragraph {"className":"wp-block-paragraph blog-card__category blog-card__category\u002d\u002dwp"} -->
+<p class="wp-block-paragraph blog-card__category blog-card__category--wp">PHP / WordPress</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"className":"wp-block-paragraph blog-card__date"} -->
-<p class="wp-block-paragraph blog-card__date">2024.12.15</p>
-<!-- /wp:paragraph --></div>
+<!-- wp:post-date {"format":"Y.m.j","metadata":{"bindings":{"datetime":{"source":"core/post-data","args":{"field":"date"}}}}} /--></div>
 <!-- /wp:group -->
 
-<!-- wp:heading {"level":3,"className":"blog-card__title"} -->
-<h3 class="wp-block-heading blog-card__title">The CSS Animation That Shouldn't Work (But Does at 3AM)</h3>
-<!-- /wp:heading -->
+<!-- wp:post-title {"isLink":true,"className":"blog-card__title"} /-->
 
-<!-- wp:paragraph {"className":"wp-block-paragraph blog-card__excerpt"} -->
-<p class="wp-block-paragraph blog-card__excerpt">A deep dive into animating CSS custom properties, abusing @keyframes, and why your browser forgives you when nobody else will.</p>
+<!-- wp:post-excerpt {"excerptLength":15,"className":"blog-card__excerpt"} /-->
+
+<!-- wp:group {"metadata":{"name":"Blog Card Footer"},"className":"blog-card__footer","layout":{"type":"flex","justifyContent":"space-between"}} -->
+<div class="wp-block-group blog-card__footer"><!-- wp:paragraph {"className":"wp-block-paragraph blog-card__read-time"} -->
+<p class="wp-block-paragraph blog-card__read-time">15 min read</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"wp-block-paragraph blog-card__link"} -->
-<p class="wp-block-paragraph blog-card__link">Read the scroll →</p>
+<p class="wp-block-paragraph blog-card__link">Read →</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></article>
-<!-- /wp:group --></div>
 <!-- /wp:group -->
+<!-- /wp:post-template --></div>
+<!-- /wp:query -->
 
 <!-- wp:group {"metadata":{"name":"Blog Grid"},"className":"blog-grid"} -->
 <div class="wp-block-group blog-grid"><!-- wp:group {"tagName":"article","metadata":{"name":"Blog Card"},"className":"blog-card animate-on-scroll"} -->
