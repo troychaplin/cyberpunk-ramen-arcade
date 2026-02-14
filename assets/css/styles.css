@@ -91,14 +91,14 @@ ul, ol {
   display: grid;
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
-  background-color: var(--wp--preset--color--bg-deep);
+  /* background-color: var(--wp--preset--color--bg-deep); */
   font-family: var(--font-mono);
   color: var(--wp--preset--color--text-warm);
   overflow: hidden;
   position: relative;
 }
 
-.hero::before {
+/* .hero::before {
   content: '';
   position: absolute;
   inset: 0;
@@ -126,7 +126,7 @@ ul, ol {
   );
   z-index: 2;
   pointer-events: none;
-}
+} */
 
 .hero-noise {
   position: absolute;
@@ -565,6 +565,10 @@ ul, ol {
   overflow: hidden;
 }
 
+.home .blog-section {
+    padding-top: var(--wp--preset--spacing--30);
+}
+
 .blog-inner {
   max-width: 1200px;
   margin: 0 auto;
@@ -953,8 +957,8 @@ font-size: var(--wp--preset--font-size--xx-large);
 /* :::SECTION:About Section::: */
 .about-section {
   position: relative;
-  padding: var(--wp--preset--spacing--65) var(--wp--preset--spacing--40);
-  background: var(--wp--preset--color--bg-deep);
+  padding: var(--wp--preset--spacing--65) var(--wp--preset--spacing--40) var(--wp--preset--spacing--50);
+  /* background: var(--wp--preset--color--bg-deep); */
   overflow: hidden;
 }
 
@@ -3796,7 +3800,7 @@ padding: 0;
 /* ============================================
    ALL TEMPLATES (except frontpage) — Full-Page Hero Atmosphere
    ============================================ */
-    body:not(.home) {
+    body {
       background-color: #08081a;
       background-image:
         linear-gradient(rgba(8, 8, 26, 0.85), rgba(8, 8, 26, 0.85)),
@@ -3807,12 +3811,12 @@ padding: 0;
       position: relative;
     }
 /* Remove blog-section background on non-home pages */
-        body:not(.home) .blog-section {
+        body .blog-section {
       background: transparent;
     }
 
 /* Scanlines + vertical fade overlay */
-body:not(.home)::before {
+body::before {
   content: '';
   position: fixed;
   inset: 0;
@@ -3838,7 +3842,7 @@ body:not(.home)::before {
 }
 
 /* Neon fog — pink/cyan radial glows */
-body:not(.home)::after {
+body::after {
   content: '';
   position: fixed;
   inset: 0;
@@ -3852,7 +3856,7 @@ body:not(.home)::after {
 }
 
 /* Ensure all page content sits above the overlays */
-body:not(.home) .wp-site-blocks {
+body .wp-site-blocks {
   position: relative;
   z-index: 1;
 }
