@@ -2626,7 +2626,7 @@ header:has(.wp-block-navigation .is-menu-open) {
               rgba(0, 0, 0, 0.08) 2px,
               rgba(0, 0, 0, 0.08) 4px
             ),
-            linear-gradient(180deg, rgba(8, 8, 26, 0.4) 0%, rgba(8, 8, 26, 0.2) 40%, rgba(8, 8, 26, 0.6) 100%);
+            linear-gradient(180deg, rgba(8, 8, 26, 0.4) 0%, rgba(8, 8, 26, 0.2) 40%, rgba(8, 8, 26, 0.85) 75%, rgba(8, 8, 26, 1) 100%);
           pointer-events: none;
           z-index: 0;
           animation: postHeroScanDrift 8s linear infinite;
@@ -2882,7 +2882,7 @@ header:has(.wp-block-navigation .is-menu-open) {
     }
 
     /* Warm overhead light effect */
-    .reading-zone::before {
+    /* .reading-zone::before {
       content: '';
       position: absolute;
       top: -5%;
@@ -2893,7 +2893,7 @@ header:has(.wp-block-navigation .is-menu-open) {
       background: radial-gradient(ellipse at center top, rgba(240, 230, 214, 0.03) 0%, rgba(255, 45, 123, 0.015) 30%, transparent 70%);
       pointer-events: none;
       filter: blur(30px);
-    }
+    } */
 
     /* CRT scanlines overlay */
     .reading-zone::after {

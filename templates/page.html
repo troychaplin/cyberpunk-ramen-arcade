@@ -1,5 +1,29 @@
 <!-- wp:template-part {"slug":"header","tagName":"header","align":"full"} /-->
 
-<!-- wp:post-content {"layout":{"type":"default"}} /-->
+<!-- wp:group {"tagName":"section","metadata":{"name":"Post Header Zone"},"align":"full","className":"post-header-zone"} -->
+<section class="wp-block-group alignfull post-header-zone"><!-- wp:group {"metadata":{"name":"Post Header Inner"},"className":"post-header__inner"} -->
+<div class="wp-block-group post-header__inner"><!-- wp:post-title {"level":1,"className":"neon-post-title"} /--></div>
+<!-- /wp:group --></section>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName":"section","metadata":{"name":"Reading Zone"},"align":"full","className":"reading-zone"} -->
+<section class="wp-block-group alignfull reading-zone"><!-- wp:group {"metadata":{"name":"Reading Zone Inner"},"className":"reading-zone__inner"} -->
+<div class="wp-block-group reading-zone__inner"><!-- wp:post-content {"className":"post-reading-content","layout":{"type":"constrained","contentSize":"720px"}} /--></div>
+<!-- /wp:group --></section>
+<!-- /wp:group -->
+
+<!-- wp:group {"tagName":"section","metadata":{"name":"Post Footer Zone"},"align":"full","className":"post-footer-zone"} -->
+<section class="wp-block-group alignfull post-footer-zone"><!-- wp:group {"metadata":{"name":"Post Footer Inner"},"className":"post-footer__inner"} -->
+<div class="wp-block-group post-footer__inner"><!-- wp:separator {"opacity":"css","className":"neon-divider"} -->
+<hr class="wp-block-separator has-css-opacity neon-divider"/>
+<!-- /wp:separator -->
+
+<!-- wp:group {"metadata":{"name":"Post Navigation Row"},"className":"post-nav-row animate-on-scroll","layout":{"type":"flex","justifyContent":"space-between"}} -->
+<div class="wp-block-group post-nav-row animate-on-scroll"><!-- wp:post-navigation-link {"type":"previous","label":"← PREVIOUS ORDER","className":"post-nav-link nav-prev"} /-->
+
+<!-- wp:post-navigation-link {"label":"NEXT ORDER →","className":"post-nav-link nav-next"} /--></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></section>
+<!-- /wp:group -->
 
 <!-- wp:template-part {"slug":"footer","tagName":"footer","align":"full"} /-->
