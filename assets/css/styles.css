@@ -2949,14 +2949,12 @@ padding: 0;
       pointer-events: none;
       z-index: 1;
     }
-
     .reading-zone__inner {
-      max-width: 720px;
-      margin: 0 auto;
-      padding: 60px var(--space-md);
-      position: relative;
-      z-index: 2;
-    }
+          margin: 0 auto;
+          padding: 60px var(--space-md);
+          position: relative;
+          z-index: 2;
+        }
 
     /* Post Reading Content Typography */
     .post-reading-content {
