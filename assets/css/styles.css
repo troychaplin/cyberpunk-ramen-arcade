@@ -863,7 +863,6 @@ font-size: var(--wp--preset--font-size--xx-large);
   align-items: flex-end;
   border: 1px solid var(--wp--preset--color--border-subtle);
   overflow: hidden;
-  cursor: pointer;
   transition: border-color 0.4s ease, box-shadow 0.4s ease, transform 0.4s ease;
 }
 
@@ -934,13 +933,24 @@ font-size: var(--wp--preset--font-size--xx-large);
   line-height: 1.2;
   transition: color 0.3s ease;
 }
+.work-card__title:hover {
+          color: var(--wp--preset--color--neon-pink);
+          text-shadow: 0 0 20px rgba(255, 45, 123, 0.3);
+        }
 
-.work-card:hover .work-card__title {
-  color: var(--wp--preset--color--neon-pink);
-  text-shadow: 0 0 20px rgba(255, 45, 123, 0.3);
-}
-
-.work-card__desc {
+    /* Work card title links — override default link color from theme.json */
+    .work-card .work-card__title a {
+      color: var(--wp--preset--color--text-warm) !important;
+      text-decoration: none !important;
+      transition: color 0.3s ease;
+    }
+    .work-card__title a:hover {
+          color: var(--wp--preset--color--neon-pink) !important;
+          text-decoration: none !important;
+          text-shadow: 0 0 20px rgba(255, 45, 123, 0.3);
+        }
+    
+    .work-card__desc {
   font-size: var(--wp--preset--font-size--small);
   color: var(--wp--preset--color--text-mid);
   line-height: 1.6;
@@ -965,10 +975,6 @@ font-size: var(--wp--preset--font-size--xx-large);
   transition: all 0.3s ease;
 }
 
-.work-card:hover .work-card__tech span {
-  border-color: rgba(0, 229, 255, 0.25);
-  color: var(--wp--preset--color--neon-cyan);
-}
 
 /* :::SECTION:About Section::: */
 .about-section {

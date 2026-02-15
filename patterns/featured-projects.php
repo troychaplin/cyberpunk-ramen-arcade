@@ -23,7 +23,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"className":"wp-block-paragraph section-desc"} -->
-<p class="wp-block-paragraph section-desc">Client projects, plugins, and creations that prove you can deploy on Fridays and thrive.<br>Every one of these shipped. Most of them on a Friday.</p>
+<p class="wp-block-paragraph section-desc">Client projects, plugins, and creations that prove you can deploy on Fridays and thrive. Every one of these shipped. Most of them on a Friday.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
@@ -35,32 +35,24 @@
 
 <!-- wp:group {"metadata":{"name":"Work Card Content"},"className":"work-card__content"} -->
 <div class="wp-block-group work-card__content"><!-- wp:paragraph {"className":"wp-block-paragraph work-card__type"} -->
-<p class="wp-block-paragraph work-card__type">WordPress / WooCommerce</p>
+<p class="wp-block-paragraph work-card__type">WordPress Plugin</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":3,"className":"work-card__title"} -->
-<h3 class="wp-block-heading work-card__title">Neon Marketplace</h3>
+<h3 class="wp-block-heading work-card__title"><a href="https://wordpress.org/plugins/block-accessibility-checks/">Block Accessibility Checks</a></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"className":"wp-block-paragraph work-card__desc"} -->
-<p class="wp-block-paragraph work-card__desc">Custom WooCommerce build with animated product cards, real-time inventory, and a checkout flow smoother than butter on a hot skillet.</p>
+<p class="wp-block-paragraph work-card__desc">A WordPress plugin that catches accessibility issues in the block editor before they ever reach your audience. Real-time validation, three-tier checking, and it won't let you publish until you fix what matters</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:group {"metadata":{"name":"Tech Stack"},"className":"work-card__tech"} -->
 <div class="wp-block-group work-card__tech"><!-- wp:paragraph {"className":"wp-block-paragraph"} -->
-<p class="wp-block-paragraph"><span>WooCommerce</span></p>
+<p class="wp-block-paragraph"><span>Accessibility</span></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"wp-block-paragraph"} -->
-<p class="wp-block-paragraph"><span>PHP</span></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph {"className":"wp-block-paragraph"} -->
-<p class="wp-block-paragraph"><span>GSAP</span></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph {"className":"wp-block-paragraph"} -->
-<p class="wp-block-paragraph"><span>REST API</span></p>
+<p class="wp-block-paragraph"><span>Validation</span></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></article>
@@ -73,28 +65,24 @@
 
 <!-- wp:group {"metadata":{"name":"Work Card Content"},"className":"work-card__content"} -->
 <div class="wp-block-group work-card__content"><!-- wp:paragraph {"className":"wp-block-paragraph work-card__type"} -->
-<p class="wp-block-paragraph work-card__type">React Application</p>
+<p class="wp-block-paragraph work-card__type">WordPress Plugin</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":3,"className":"work-card__title"} -->
-<h3 class="wp-block-heading work-card__title">Analytics Dashboard</h3>
+<h3 class="wp-block-heading work-card__title"><a href="https://wordpress.org/plugins/priority-plus-navigation/">Priority Plus Navigation</a></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"className":"wp-block-paragraph work-card__desc"} -->
-<p class="wp-block-paragraph work-card__desc">Real-time data visualization with custom chart components and state management that doesn't make you cry.</p>
+<p class="wp-block-paragraph work-card__desc">A WordPress Navigation block variation that knows when to fold 'em. Shows what fits, tucks the rest into a "More" dropdown, and adapts automatically as the screen changes. Priority Plus pattern, zero hassle.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:group {"metadata":{"name":"Tech Stack"},"className":"work-card__tech"} -->
 <div class="wp-block-group work-card__tech"><!-- wp:paragraph {"className":"wp-block-paragraph"} -->
-<p class="wp-block-paragraph"><span>React</span></p>
+<p class="wp-block-paragraph"><span>Navigation</span></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"wp-block-paragraph"} -->
-<p class="wp-block-paragraph"><span>D3.js</span></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph {"className":"wp-block-paragraph"} -->
-<p class="wp-block-paragraph"><span>Node</span></p>
+<p class="wp-block-paragraph"><span>Variation</span></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></article>
@@ -107,28 +95,24 @@
 
 <!-- wp:group {"metadata":{"name":"Work Card Content"},"className":"work-card__content"} -->
 <div class="wp-block-group work-card__content"><!-- wp:paragraph {"className":"wp-block-paragraph work-card__type"} -->
-<p class="wp-block-paragraph work-card__type">WordPress Plugin</p>
+<p class="wp-block-paragraph work-card__type">WordPress Tools</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":3,"className":"work-card__title"} -->
-<h3 class="wp-block-heading work-card__title">Block Forge</h3>
+<h3 class="wp-block-heading work-card__title"><a href="https://github.com/troychaplin/wp-dependency-manager">WP Dependency Manager</a></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"className":"wp-block-paragraph work-card__desc"} -->
-<p class="wp-block-paragraph work-card__desc">A custom Gutenberg block library with 20+ blocks, each more unhinged and useful than the last.</p>
+<p class="wp-block-paragraph work-card__desc">A build tool for managing WordPress themes and plugins in a monorepo structure. This package provides standardized configurations and build tools for efficient WordPress development.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:group {"metadata":{"name":"Tech Stack"},"className":"work-card__tech"} -->
 <div class="wp-block-group work-card__tech"><!-- wp:paragraph {"className":"wp-block-paragraph"} -->
-<p class="wp-block-paragraph"><span>Gutenberg</span></p>
+<p class="wp-block-paragraph"><span>Build Tool</span></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"wp-block-paragraph"} -->
-<p class="wp-block-paragraph"><span>React</span></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph {"className":"wp-block-paragraph"} -->
-<p class="wp-block-paragraph"><span>PHP</span></p>
+<p class="wp-block-paragraph"><span>Coding Standards</span></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></article>
@@ -141,32 +125,24 @@
 
 <!-- wp:group {"metadata":{"name":"Work Card Content"},"className":"work-card__content"} -->
 <div class="wp-block-group work-card__content"><!-- wp:paragraph {"className":"wp-block-paragraph work-card__type"} -->
-<p class="wp-block-paragraph work-card__type">Full-Stack WordPress</p>
+<p class="wp-block-paragraph work-card__type">Experimental</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:heading {"level":3,"className":"work-card__title"} -->
-<h3 class="wp-block-heading work-card__title">Creative Agency Rebuild</h3>
+<h3 class="wp-block-heading work-card__title"><a href="https://github.com/troychaplin/storybook-starter">Story to Block</a></h3>
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"className":"wp-block-paragraph work-card__desc"} -->
-<p class="wp-block-paragraph work-card__desc">Complete agency site rebuild with headless WordPress, custom theme, animated page transitions, and a lighthouse score that'll make you blink twice.</p>
+<p class="wp-block-paragraph work-card__desc">Generate WordPress <code>theme.json</code>, CSS token mappings, and PHP integration hooks from a single JSON config. Designed for Storybook component libraries that need to work in WordPress block themes.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:group {"metadata":{"name":"Tech Stack"},"className":"work-card__tech"} -->
 <div class="wp-block-group work-card__tech"><!-- wp:paragraph {"className":"wp-block-paragraph"} -->
-<p class="wp-block-paragraph"><span>WordPress</span></p>
+<p class="wp-block-paragraph"><span>Blocks</span></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph {"className":"wp-block-paragraph"} -->
-<p class="wp-block-paragraph"><span>Next.js</span></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph {"className":"wp-block-paragraph"} -->
-<p class="wp-block-paragraph"><span>GraphQL</span></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph {"className":"wp-block-paragraph"} -->
-<p class="wp-block-paragraph"><span>Framer Motion</span></p>
+<p class="wp-block-paragraph"><span>Components</span></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></article>
