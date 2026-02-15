@@ -591,13 +591,21 @@ ul, ol {
   overflow: hidden;
   transition: border-color 0.4s ease, box-shadow 0.4s ease;
 }
-
 .blog-card--featured:hover {
-  border-color: var(--wp--preset--color--neon-pink);
-  box-shadow: 0 0 40px rgba(255, 45, 123, 0.1), inset 0 0 40px rgba(255, 45, 123, 0.03);
-}
+      border-color: var(--wp--preset--color--neon-pink);
+      box-shadow: 0 0 40px rgba(255, 45, 123, 0.1), inset 0 0 40px rgba(255, 45, 123, 0.03);
+    }
 
-.blog-card__overlay {
+    .blog-card--featured::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      background: linear-gradient(to right, rgba(8, 8, 26, 0.92) 0%, rgba(8, 8, 26, 0.85) 55%, rgba(8, 8, 26, 0.5) 80%, transparent 100%);
+      pointer-events: none;
+    }
+    
+    .blog-card__overlay {
   position: absolute;
   inset: 0;
   background: linear-gradient(180deg, rgba(8, 8, 26, 0.3) 0%, rgba(8, 8, 26, 0.92) 100%);
@@ -863,14 +871,22 @@ font-size: var(--wp--preset--font-size--xx-large);
   grid-column: span 2;
   min-height: 380px;
 }
-
 .work-card:hover {
-  border-color: var(--wp--preset--color--neon-pink);
-  box-shadow: 0 0 40px rgba(255, 45, 123, 0.08);
-  transform: translateY(-3px);
-}
-
-.work-card__overlay {
+      border-color: var(--wp--preset--color--neon-pink);
+      box-shadow: 0 0 40px rgba(255, 45, 123, 0.08);
+      transform: translateY(-3px);
+    }
+    
+    .work-card::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      background: linear-gradient(to right, rgba(8, 8, 26, 0.92) 0%, rgba(8, 8, 26, 0.85) 55%, rgba(8, 8, 26, 0.5) 80%, transparent 100%);
+      pointer-events: none;
+    }
+    
+    .work-card__overlay {
   position: absolute;
   inset: 0;
   background: linear-gradient(180deg,
