@@ -23,7 +23,7 @@
 <div class="wp-block-columns about-layout"><!-- wp:column {"metadata":{"name":"About Portrait"},"className":"about-portrait animate-on-scroll"} -->
 <div class="wp-block-column about-portrait animate-on-scroll"><!-- wp:group {"metadata":{"name":"Portrait Frame"},"className":"about-portrait__frame"} -->
 <div class="wp-block-group about-portrait__frame"><!-- wp:image {"sizeSlug":"full","className":"about-portrait__img"} -->
-<figure class="wp-block-image size-full about-portrait__img"><img src="http://localhost:8896/wp-content/uploads/2026/02/troy-portrait.jpg" alt="Troy Chaplin, frontend developer"/></figure>
+<figure class="wp-block-image size-full about-portrait__img"><img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/cyberpunk-portrait.jpg'); ?>" alt="Troy Chaplin, frontend developer"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:group {"className":"about-portrait__scanlines miles-editor-hidden"} -->

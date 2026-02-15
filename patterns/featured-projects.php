@@ -28,7 +28,7 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"metadata":{"name":"Work Grid"},"align":"wide","className":"work-grid"} -->
-<div class="wp-block-group alignwide work-grid"><!-- wp:group {"tagName":"article","metadata":{"name":"Neon Marketplace Card"},"className":"work-card animate-on-scroll","style":{"background":{"backgroundImage":{"url":"http://localhost:8896/wp-content/uploads/2026/02/work-ecommerce.jpg"},"backgroundSize":"cover","backgroundPosition":"center center"}}} -->
+<div class="wp-block-group alignwide work-grid"><!-- wp:group {"tagName":"article","metadata":{"name":"Neon Marketplace Card"},"className":"work-card animate-on-scroll","style":{"background":{"backgroundImage":{"url":"<?php echo esc_url(get_template_directory_uri() . '/assets/images/work-ecommerce.jpg'); ?>"},"backgroundSize":"cover","backgroundPosition":"center center"}}} -->
 <article class="wp-block-group work-card animate-on-scroll"><!-- wp:group {"className":"work-card__overlay miles-editor-hidden"} -->
 <div class="wp-block-group work-card__overlay miles-editor-hidden"></div>
 <!-- /wp:group -->
@@ -58,7 +58,7 @@
 <!-- /wp:group --></article>
 <!-- /wp:group -->
 
-<!-- wp:group {"tagName":"article","metadata":{"name":"Analytics Dashboard Card"},"className":"work-card animate-on-scroll","style":{"background":{"backgroundImage":{"url":"http://localhost:8896/wp-content/uploads/2026/02/work-dashboard.jpg"},"backgroundSize":"cover","backgroundPosition":"center center"}}} -->
+<!-- wp:group {"tagName":"article","metadata":{"name":"Analytics Dashboard Card"},"className":"work-card animate-on-scroll","style":{"background":{"backgroundImage":{"url":"<?php echo esc_url(get_template_directory_uri() . '/assets/images/work-dashboard.jpg'); ?>"},"backgroundSize":"cover","backgroundPosition":"center center"}}} -->
 <article class="wp-block-group work-card animate-on-scroll"><!-- wp:group {"className":"work-card__overlay miles-editor-hidden"} -->
 <div class="wp-block-group work-card__overlay miles-editor-hidden"></div>
 <!-- /wp:group -->
@@ -88,7 +88,7 @@
 <!-- /wp:group --></article>
 <!-- /wp:group -->
 
-<!-- wp:group {"tagName":"article","metadata":{"name":"Block Forge Card"},"className":"work-card animate-on-scroll","style":{"background":{"backgroundImage":{"url":"http://localhost:8896/wp-content/uploads/2026/02/work-plugin.jpg"},"backgroundSize":"cover","backgroundPosition":"center center"}}} -->
+<!-- wp:group {"tagName":"article","metadata":{"name":"Block Forge Card"},"className":"work-card animate-on-scroll","style":{"background":{"backgroundImage":{"url":"<?php echo esc_url(get_template_directory_uri() . '/assets/images/work-plugin.jpg'); ?>"},"backgroundSize":"cover","backgroundPosition":"center center"}}} -->
 <article class="wp-block-group work-card animate-on-scroll"><!-- wp:group {"className":"work-card__overlay miles-editor-hidden"} -->
 <div class="wp-block-group work-card__overlay miles-editor-hidden"></div>
 <!-- /wp:group -->
@@ -118,7 +118,7 @@
 <!-- /wp:group --></article>
 <!-- /wp:group -->
 
-<!-- wp:group {"tagName":"article","metadata":{"name":"Creative Agency Card"},"className":"work-card animate-on-scroll","style":{"background":{"backgroundImage":{"url":"http://localhost:8896/wp-content/uploads/2026/02/work-agency.jpg"},"backgroundSize":"cover","backgroundPosition":"center center"}}} -->
+<!-- wp:group {"tagName":"article","metadata":{"name":"Creative Agency Card"},"className":"work-card animate-on-scroll","style":{"background":{"backgroundImage":{"url":"<?php echo esc_url(get_template_directory_uri() . '/assets/images/work-agency.jpg'); ?>"},"backgroundSize":"cover","backgroundPosition":"center center"}}} -->
 <article class="wp-block-group work-card animate-on-scroll"><!-- wp:group {"className":"work-card__overlay miles-editor-hidden"} -->
 <div class="wp-block-group work-card__overlay miles-editor-hidden"></div>
 <!-- /wp:group -->

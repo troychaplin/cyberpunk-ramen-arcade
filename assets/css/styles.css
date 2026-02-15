@@ -2706,7 +2706,7 @@ header:has(.wp-block-navigation .is-menu-open) {
        ============================================ */
     .post-header-zone {
         background-color: var(--color-bg-deep);
-        background-image: url('/wp-content/uploads/2026/02/post-hero-atmosphere.jpg');
+        background-image: url('../images/post-hero-atmosphere.jpg');
         background-size: cover;
         background-position: center 30%;
         padding: clamp(120px, 18vh, 200px) var(--space-md) clamp(80px, 12vh, 140px);
@@ -3873,7 +3873,7 @@ padding: 0;
       background-color: #08081a;
       background-image:
         linear-gradient(rgba(8, 8, 26, 0.85), rgba(8, 8, 26, 0.85)),
-        url('/wp-content/uploads/2026/02/post-hero-atmosphere.jpg');
+        url('../images/post-hero-atmosphere.jpg');
       background-size: cover;
       background-position: center 30%;
       background-attachment: fixed;

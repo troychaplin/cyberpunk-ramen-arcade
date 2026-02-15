@@ -26,7 +26,7 @@
 <!-- wp:query {"queryId":10,"query":{"perPage":1,"pages":1,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"only","inherit":false},"metadata":{"categories":["posts"],"patternName":"core/query-grid-posts","name":"Grid"}} -->
 <div class="wp-block-query"><!-- wp:post-template {"layout":{"type":"grid","columnCount":1}} -->
 <!-- wp:group {"metadata":{"name":"Blog Featured"},"className":"blog-featured animate-on-scroll"} -->
-<div class="wp-block-group blog-featured animate-on-scroll"><!-- wp:group {"tagName":"article","metadata":{"name":"Featured Blog Card"},"className":"blog-card blog-card\u002d\u002dfeatured","style":{"background":{"backgroundImage":{"url":"http://localhost:8896/wp-content/uploads/2026/02/blog-featured.jpg"},"backgroundSize":"cover","backgroundPosition":"center center"}}} -->
+<div class="wp-block-group blog-featured animate-on-scroll"><!-- wp:group {"tagName":"article","metadata":{"name":"Featured Blog Card"},"className":"blog-card blog-card\u002d\u002dfeatured","style":{"background":{"backgroundImage":{"url":"<?php echo esc_url(get_template_directory_uri() . '/assets/images/blog-featured.jpg'); ?>"},"backgroundSize":"cover","backgroundPosition":"center center"}}} -->
 <article class="wp-block-group blog-card blog-card--featured"><!-- wp:group {"className":"blog-card__overlay miles-editor-hidden"} -->
 <div class="wp-block-group blog-card__overlay miles-editor-hidden"></div>
 <!-- /wp:group -->
