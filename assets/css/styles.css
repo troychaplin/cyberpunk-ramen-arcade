@@ -957,7 +957,7 @@ font-size: var(--wp--preset--font-size--xx-large);
 /* :::SECTION:About Section::: */
 .about-section {
   position: relative;
-  padding: var(--wp--preset--spacing--65) var(--wp--preset--spacing--40) var(--wp--preset--spacing--50);
+  padding: var(--wp--preset--spacing--65) var(--wp--preset--spacing--40);
   /* background: var(--wp--preset--color--bg-deep); */
   overflow: hidden;
 }
@@ -1038,14 +1038,14 @@ font-size: var(--wp--preset--font-size--xx-large);
 
 /* Stats */
 .about-stats {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: var(--wp--preset--spacing--30);
-      margin-top: var(--wp--preset--spacing--50);
-  margin-bottom: var(--wp--preset--spacing--50);
-  padding: var(--wp--preset--spacing--40) 0;
-  border-top: 1px solid var(--wp--preset--color--border-subtle);
-  border-bottom: 1px solid var(--wp--preset--color--border-subtle);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--wp--preset--spacing--30);
+    margin-top: var(--wp--preset--spacing--50);
+    margin-bottom: var(--wp--preset--spacing--50);
+    padding: var(--wp--preset--spacing--40) 0 0;
+    border-top: 1px solid var(--wp--preset--color--border-subtle);
+    /* border-bottom: 1px solid var(--wp--preset--color--border-subtle); */
 }
 
 .about-stat {
