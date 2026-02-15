@@ -3046,17 +3046,17 @@ padding: 0;
       margin-top: var(--space-lg);
       margin-bottom: var(--space-sm);
       position: relative;
-      padding-left: var(--space-md);
+      /* padding-left: var(--space-md); */
     }
 
-    .post-reading-content h2::before {
+    /* .post-reading-content h2::before {
       content: '//';
       position: absolute;
       left: 0;
       color: var(--color-neon-pink);
       font-weight: 400;
       opacity: 0.7;
-    }
+    } */
 
     .post-reading-content h3 {
       font-family: var(--font-display);
@@ -3188,9 +3188,15 @@ padding: 0;
     .post-reading-content ol {
       padding-left: var(--space-md);
       margin-bottom: var(--space-md);
+      list-style-type: disc;
     }
-
+    
+    .post-reading-content ol {
+        list-style-type: decimal;
+    }
+    
     .post-reading-content li {
+        padding-left: var(--space-xs);
       margin-bottom: var(--space-xs);
       position: relative;
     }
