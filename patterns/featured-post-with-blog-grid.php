@@ -7,7 +7,7 @@
  * Post Types: page
  */
 ?>
-<!-- wp:group {"tagName":"section","metadata":{"name":"Blog Section"},"align":"full","className":"blog-section","layout":{"type":"constrained"}} -->
+<!-- wp:group {"tagName":"section","metadata":{"name":"Blog Section","categories":["cyberpunk-ramen-arcade"],"patternName":"cyberpunk-ramen-arcade/featured-post-with-blog-grid"},"align":"full","className":"blog-section","layout":{"type":"constrained"}} -->
 <section class="wp-block-group alignfull blog-section" id="blog"><!-- wp:group {"metadata":{"name":"Blog Inner"},"align":"wide","className":"blog-inner"} -->
 <div class="wp-block-group alignwide blog-inner"><!-- wp:group {"metadata":{"name":"Section Header"},"className":"section-header animate-on-scroll"} -->
 <div class="wp-block-group section-header animate-on-scroll"><!-- wp:paragraph {"className":"wp-block-paragraph section-tag"} -->
@@ -19,10 +19,12 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph {"className":"wp-block-paragraph section-desc"} -->
-<p class="wp-block-paragraph section-desc">CSS Grid tricks, WordPress hooks, and forbidden knowledge scrolls.<br>Everything is actually correct and well-documented. Probably.</p>
+<p class="wp-block-paragraph section-desc">CSS Grid tricks, WordPress hooks, and forbidden knowledge scrolls. Everything is actually correct and well-documented. Probably.</p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
+<!-- wp:query {"queryId":10,"query":{"perPage":1,"pages":1,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"only","inherit":false},"metadata":{"categories":["posts"],"patternName":"core/query-grid-posts","name":"Grid"}} -->
+<div class="wp-block-query"><!-- wp:post-template {"layout":{"type":"grid","columnCount":1}} -->
 <!-- wp:group {"metadata":{"name":"Blog Featured"},"className":"blog-featured animate-on-scroll"} -->
 <div class="wp-block-group blog-featured animate-on-scroll"><!-- wp:group {"tagName":"article","metadata":{"name":"Featured Blog Card"},"className":"blog-card blog-card\u002d\u002dfeatured","style":{"background":{"backgroundImage":{"url":"http://localhost:8896/wp-content/uploads/2026/02/blog-featured.jpg"},"backgroundSize":"cover","backgroundPosition":"center center"}}} -->
 <article class="wp-block-group blog-card blog-card--featured"><!-- wp:group {"className":"blog-card__overlay miles-editor-hidden"} -->
@@ -31,29 +33,19 @@
 
 <!-- wp:group {"metadata":{"name":"Blog Card Content"},"className":"blog-card__content"} -->
 <div class="wp-block-group blog-card__content"><!-- wp:group {"metadata":{"name":"Blog Card Meta"},"className":"blog-card__meta","layout":{"type":"flex","flexWrap":"wrap"}} -->
-<div class="wp-block-group blog-card__meta"><!-- wp:paragraph {"className":"wp-block-paragraph blog-card__category blog-card__category\u002d\u002dcss"} -->
-<p class="wp-block-paragraph blog-card__category blog-card__category--css">CSS Animation</p>
-<!-- /wp:paragraph -->
+<div class="wp-block-group blog-card__meta"><!-- wp:post-date {"format":"Y.m.j","metadata":{"bindings":{"datetime":{"source":"core/post-data","args":{"field":"date"}}}},"className":"blog-card__date"} /-->
 
-<!-- wp:paragraph {"className":"wp-block-paragraph blog-card__date"} -->
-<p class="wp-block-paragraph blog-card__date">2024.12.15</p>
-<!-- /wp:paragraph --></div>
+<!-- wp:post-time-to-read {"className":"blog-card__read-time"} /--></div>
 <!-- /wp:group -->
 
-<!-- wp:heading {"level":3,"className":"blog-card__title"} -->
-<h3 class="wp-block-heading blog-card__title">The CSS Animation That Shouldn't Work (But Does at 3AM)</h3>
-<!-- /wp:heading -->
+<!-- wp:post-title {"isLink":true,"className":"blog-card__title","style":{"elements":{"link":{"color":{"text":"var:preset|color|text-warm"},"":{"color":{"text":"var:preset|color|text-warm"}}}},"typography":{"textDecoration":"none"}}} /-->
 
-<!-- wp:paragraph {"className":"wp-block-paragraph blog-card__excerpt"} -->
-<p class="wp-block-paragraph blog-card__excerpt">A deep dive into animating CSS custom properties, abusing @keyframes, and why your browser forgives you when nobody else will.</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph {"className":"wp-block-paragraph blog-card__link"} -->
-<p class="wp-block-paragraph blog-card__link">Read the scroll →</p>
-<!-- /wp:paragraph --></div>
+<!-- wp:post-excerpt {"moreText":"","className":"blog-card__excerpt"} /--></div>
 <!-- /wp:group --></article>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
+<!-- /wp:post-template --></div>
+<!-- /wp:query -->
 
 <!-- wp:query {"queryId":10,"query":{"perPage":3,"pages":1,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"exclude","inherit":false},"metadata":{"categories":["posts"],"patternName":"core/query-grid-posts","name":"Grid"}} -->
 <div class="wp-block-query"><!-- wp:post-template {"className":"blog-grid","layout":{"type":"grid","columnCount":3}} -->
