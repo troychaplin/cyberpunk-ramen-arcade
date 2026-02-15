@@ -634,7 +634,7 @@ ul, ol {
       font-size: var(--wp--preset--font-size--small);
       font-weight: 600;
       letter-spacing: 0.1em;
-      text-transform: uppercase;
+      text-transform: none !important;
       padding: 0;
     }
 /* Category colors removed — now using dynamic post-terms block */
@@ -744,8 +744,8 @@ font-size: var(--wp--preset--font-size--xx-large);
 .blog-card .wp-block-post-terms a {
               color: var(--wp--preset--color--neon-pink) !important;
               text-decoration: none !important;
-              padding: 0.2em 0.6em;
-              border: 1px solid rgba(255, 45, 123, 0.3);
+              /* padding: 0.2em 0.6em;
+              border: 1px solid rgba(255, 45, 123, 0.3); */
               transition: all 0.3s ease;
             }
 
@@ -927,7 +927,7 @@ font-size: var(--wp--preset--font-size--xx-large);
   font-size: var(--wp--preset--font-size--xx-large);
   font-weight: 700;
   color: var(--wp--preset--color--text-warm);
-  text-transform: uppercase;
+  text-transform: none !important;
   letter-spacing: 0.03em;
   margin-bottom: var(--wp--preset--spacing--20);
   line-height: 1.2;
